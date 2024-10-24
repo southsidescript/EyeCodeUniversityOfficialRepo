@@ -22,6 +22,7 @@
 
   }
   &_card{
+
     background-image: radial-gradient(
                     at 88% 40%,
                     hsla(240, 15%, 9%, 1) 0px,
@@ -86,6 +87,24 @@
  color: white;
  font-family: "Play", sans-serif;
 
+  &_btn{
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+    border: 2px solid darkviolet;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 15px purple;
+
+    font-family: 'Play';
+    padding: 10px;
+    border-radius: 22px;
+
+    &:hover{
+      border: 3px solid darkviolet;
+    }
+
+  }
    &_status{
      display: flex;
      align-items: center;

@@ -8,6 +8,8 @@ import { useEffect, useState } from 'react';
 import '../../styles/global.css'
 import {ThemeContext} from "@/Context/Context";
 import {useContext} from "react";
+
+
 const Card = ({name,image,status,codeQuantity,percentage,creativity}) => {
 
      const {setActiveWindow,activeWindow,userData,setUserData} = useContext(ThemeContext);
@@ -44,16 +46,9 @@ const Card = ({name,image,status,codeQuantity,percentage,creativity}) => {
              <div className={styles.card_status}>{status? 'Success':'Failed'} <div className={status ? styles.card_status_active : styles.card_status_inactive}></div>  </div>
 
              <div>
-                 <button type="button" className="btn">
-                     <strong>Подробнее</strong>
-                     <div id="container-stars">
-                         <div id="stars"></div>
-                     </div>
+                 <button type="button" className={styles.card_btn}>
+                    Подробнее
 
-                     <div id="glow">
-                         <div className="circle"></div>
-                         <div className="circle"></div>
-                     </div>
                  </button>
 
              </div>
