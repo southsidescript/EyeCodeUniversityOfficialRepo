@@ -25,10 +25,7 @@ export default function RootLayout({ children }) {
       <SendContextApi>
         <html lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
-
-        {children}
-
-
+                                {children}
         </body>
         </html>
       </SendContextApi>

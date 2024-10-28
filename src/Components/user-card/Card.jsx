@@ -43,7 +43,7 @@ const Card = ({name,image,status,codeQuantity,percentage,creativity}) => {
                   src={'/user.png'}
                   alt={name}/>
              <div className={styles.card_name}>{name}</div>
-             <div className={styles.card_status}>{status? 'Success':'Failed'} <div className={status ? styles.card_status_active : styles.card_status_inactive}></div>  </div>
+             <div className={styles.card_status}>{status? 'Done':'Failed'} <div className={status ? styles.card_status_active : styles.card_status_inactive}></div>  </div>
 
              <div>
                  <button type="button" className={styles.card_btn}>
