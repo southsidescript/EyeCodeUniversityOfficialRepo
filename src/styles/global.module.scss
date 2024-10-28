@@ -257,3 +257,24 @@
 
 
 }
+
+
+@media screen and (max-width: 500px){
+  .card{
+    width: 90vw;
+
+    &_name{
+      font-size: 0.8rem;
+    }
+
+    &_btn{
+      width: 4rem;
+      height: 2rem;
+      font-size: 0.5rem;
+    }
+
+    &_status{
+      font-size: 0.8rem;
+    }
+  }
+}
