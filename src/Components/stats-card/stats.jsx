@@ -1,18 +1,15 @@
 import style from '../../styles/global.module.scss'
 import Image from 'next/image'
 import '../../styles/global.css'
-import {useContext, useEffect} from "react";
+import {useContext} from "react";
 import { ThemeContext} from '../../Context/Context';
 import '../../styles/global.css'
 import {RadarChart,PolarGrid,PolarAngleAxis,PolarRadiusAxis,PieChart,Pie,Radar,Legend} from 'recharts';
 const StatsCard = (props) => {
 
-
-
     const {activeWindow,setActiveWindow} = useContext(ThemeContext);
 
-    const {name,codeQuantity,percent,creativity} = props;
-
+    const {name,codeQuantity,percent,creativity,english} = props;
 
     const data = [
         {
@@ -27,7 +24,7 @@ const StatsCard = (props) => {
         },
         {
             "subject": "English",
-            "A": 50,
+            "A":english * 10 ,
             "fullMark": 100
         },
         {
@@ -37,30 +34,27 @@ const StatsCard = (props) => {
         },
         {
             "subject": "Total",
-            "A": (creativity * 10 + codeQuantity * 10 + percent)/3,
+            "A": ((creativity * 10) + (codeQuantity * 10) + percent + (english * 10))/4,
             "fullMark": 100
         },
 
     ]
 
-
-    useEffect(() => {
-
-        console.log(codeQuantity)
-
-    }, []);
-
       return(
-
-
               <div className={style.stats_card}>
 
                   <div onClick={() => {
                    setActiveWindow(!activeWindow)
-                  }} className={style.close}><img src="./close.png" alt=""/></div>
+                  }} className={style.close}>
+                      <Image
+                        src={'/close.png'}
+                        alt={'close'}
+                        width={25}
+                  />
+
+                  </div>
 
                   <div>
-
                       <Image
                           id={'logo'}
                           src={'/user3.png'}
@@ -78,8 +72,6 @@ const StatsCard = (props) => {
                       <Radar name={name} dataKey="A" stroke="#8884d8" fill="#8884d8" fillOpacity={0.5} />
                       <Legend />
                   </RadarChart>
-
-
 
                   <div className={style.stats_card_content}>
                       <div className={style.stats_name}> {name}</div>

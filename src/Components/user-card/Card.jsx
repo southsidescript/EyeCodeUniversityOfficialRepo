@@ -10,28 +10,20 @@ import {ThemeContext} from "@/Context/Context";
 import {useContext} from "react";
 
 
-const Card = ({name,image,status,codeQuantity,percentage,creativity}) => {
+const Card = ({name,image,status,codeQuantity,percentage,creativity,english}) => {
 
      const {setActiveWindow,activeWindow,userData,setUserData} = useContext(ThemeContext);
-    //
-    // const [showComponent,setShowComponent] = useState(false);
-
-
-     
      function showStats(){
-
-
      setActiveWindow(!activeWindow);
          setUserData({
              name:name,
              codeQuantity:codeQuantity,
              percentage:percentage,
-             creativity:creativity
+             creativity:creativity,
+             english:english
          })
 
      }
-
-
 
     return(
         <>
@@ -41,14 +33,15 @@ const Card = ({name,image,status,codeQuantity,percentage,creativity}) => {
                   width={25}
                   height={25}
                   src={'/user.png'}
-                  alt={name}/>
+                  alt={name}
+              />
+
              <div className={styles.card_name}>{name}</div>
              <div className={styles.card_status}>{status? 'Done':'Failed'} <div className={status ? styles.card_status_active : styles.card_status_inactive}></div>  </div>
 
              <div>
                  <button type="button" className={styles.card_btn}>
                     Подробнее
-
                  </button>
 
              </div>
