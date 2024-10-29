@@ -1,10 +1,11 @@
 import style from '../../styles/global.module.scss'
 import Image from 'next/image'
 import '../../styles/global.css'
-import {useContext} from "react";
+import {useContext, useEffect} from "react";
 import { ThemeContext} from '../../Context/Context';
 import '../../styles/global.css'
 import {RadarChart,PolarGrid,PolarAngleAxis,PolarRadiusAxis,PieChart,Pie,Radar,Legend} from 'recharts';
+
 const StatsCard = (props) => {
 
     const {activeWindow,setActiveWindow} = useContext(ThemeContext);
@@ -24,7 +25,7 @@ const StatsCard = (props) => {
         },
         {
             "subject": "English",
-            "A":english * 10 ,
+            "A":english * 10,
             "fullMark": 100
         },
         {
@@ -40,6 +41,9 @@ const StatsCard = (props) => {
 
     ]
 
+
+
+
       return(
               <div className={style.stats_card}>
 
@@ -50,6 +54,7 @@ const StatsCard = (props) => {
                         src={'/close.png'}
                         alt={'close'}
                         width={25}
+                        height={25}
                   />
 
                   </div>

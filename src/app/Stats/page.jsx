@@ -13,7 +13,7 @@ import  { useContext } from "react";
 
     return(
             <main className={style.stats}>
-                {activeWindow?<StatsCard active={activeWindow} name={userData.name} codeQuantity={userData.codeQuantity} creativity={userData.creativity} percent={userData.percentage}/>:''}
+                {activeWindow?<StatsCard active={activeWindow} english={userData.english} name={userData.name} codeQuantity={userData.codeQuantity} creativity={userData.creativity} percent={userData.percentage}/>:''}
                 <div className={style.stats_table}>
                     {result_data.map(n => {
                         return <li key={n.id}>
