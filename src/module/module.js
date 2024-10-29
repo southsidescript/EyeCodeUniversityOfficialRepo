@@ -147,7 +147,7 @@ let result_data = [
     },
     {
         id:17,
-        name:'Ммран',
+        name:'Имран',
         codeQuantity:5,
         creativity:5,
         percent:60,
