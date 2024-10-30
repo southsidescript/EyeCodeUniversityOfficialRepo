@@ -154,9 +154,6 @@ let result_data = [
         status:true,
         english:3
     }
-
-
-
 ]
 
   module.exports = {

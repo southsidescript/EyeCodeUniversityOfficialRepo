@@ -80,7 +80,7 @@ const StatsCard = (props) => {
 
                   <div className={style.stats_card_content}>
                       <div className={style.stats_name}> {name}</div>
-                      <div className={style.stats_code_quantity}> Качество кода:{codeQuantity} /10</div>
+                      <div className={style.stats_code_quantity}> Качество кода: <br/> {codeQuantity} /10</div>
                       <div className={style.stats_code_percentage}>ПВЗ:{percent}%</div>
                       <div className={style.stats_creativity}>Креативность:{creativity}/10</div>
                   </div>

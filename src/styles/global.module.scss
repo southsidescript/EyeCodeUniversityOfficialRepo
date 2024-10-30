@@ -48,6 +48,7 @@
     top: calc(50% - 40%);
     width: 60%;
     height: 80%;
+    padding:5%;
     border-radius: 10px;
     box-shadow: 0px 0px 0px white;
 
@@ -63,19 +64,16 @@
     &_table{
       
       width: 100vw;
+      padding: 50px 0px 50px 0px;
       height: 100vh;
       display: flex;
       flex-direction: column;
        overflow-y:scroll ;
       overflow-x: hidden;
       justify-content: space-evenly;
-      gap: 10px;
+      gap: 15px;
       align-items: center;  
       overflow-y: scroll;
-
-      &::-webkit-scrollbar{
-
-      }
 
       &::-webkit-scrollbar-track{
           background-color: red;
@@ -85,7 +83,7 @@
 
 }
 
-.card{
+.card {
   border-radius: 10px;
   width: 500px;
   height: 50px;
@@ -93,15 +91,16 @@
   backdrop-filter: blur(10px);
   display: flex;
   transition: all .1s linear;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
- color: white;
- font-family: "Play", sans-serif;
+  color: white;
+  font-family: "Play", sans-serif;
 
-  &_name{
+  &_name {
     width: 150px;
   }
-  &_btn{
+
+  &_btn {
     background: none;
     border: none;
     outline: none;
@@ -114,19 +113,20 @@
     padding: 10px;
     border-radius: 22px;
 
-    &:hover{
+    &:hover {
       border: 3px solid darkviolet;
     }
 
   }
-   &_status{
-     display: flex;
-     align-items: center;
-     justify-content: center;
-     gap: 10px;
-   }
 
-  &_status_active{
+  &_status {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  &_status_active {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -135,7 +135,7 @@
     box-shadow: 0px 0px 10px green;
   }
 
-  &_status_inactive{
+  &_status_inactive {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -145,13 +145,13 @@
   }
 
 
-  &:hover{
+  &:hover {
     transform: translateX(15px);
     box-shadow: 0px 0px 10px blue;
     cursor: pointer;
   }
-}
 
+}
 
 
 .loading{
