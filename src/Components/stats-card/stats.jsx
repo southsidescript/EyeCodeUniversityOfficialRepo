@@ -3,7 +3,7 @@ import Image from 'next/image'
 import '../../styles/global.css'
 import {useContext, useEffect} from "react";
 import { ThemeContext} from '../../Context/Context';
-import '../../styles/global.css'
+import '../../styles/global.css';
 import {RadarChart,PolarGrid,PolarAngleAxis,PolarRadiusAxis,PieChart,Pie,Radar,Legend} from 'recharts';
 
 const StatsCard = (props) => {
@@ -41,7 +41,7 @@ const StatsCard = (props) => {
 
     ]
 
-
+1
 
 
       return(
