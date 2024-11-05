@@ -11,6 +11,7 @@ import { useRouter } from 'next/navigation';
 const Loading = () => {
 
 
+    const [greeting,setGreeting] = useState('Добро пожаловать в EyeCode University Stats')
 
     const [load,setLoad] = useState(true)
     
@@ -18,13 +19,21 @@ const Loading = () => {
 
     useEffect(()=>{
 
+         console.log(greeting)
+
        const timer =  setTimeout(()=>{
             setLoad(false);
-            router.push('/Stats')
+            clearTimeout(timer)
+
+           let greetingTimeOut = setTimeout(()=>{
+               router.push('/Stats');
+               clearTimeout(greetingTimeOut);
+           },4000)
+
         },2000);
 
         return ()=>{
-            clearTimeout(timer);
+           ;
         }
 
 
@@ -40,6 +49,11 @@ const Loading = () => {
     return(<div className={style.loading} >
 
          {load?<Spin />:''}
+
+        {!load?<div className={style.greeting}>{greeting}</div> :''}
+
+
+
 
 
     </div>)

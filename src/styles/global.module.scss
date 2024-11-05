@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
 
 .stats{
   color: white;
@@ -62,7 +62,7 @@
 
   
     &_table{
-      
+      animation: table 3s 1;
       width: 100vw;
       padding: 50px 0px 50px 0px;
       height: 100vh;
@@ -179,9 +179,36 @@
   cursor: pointer;
 }
 
+.greeting{
+  color: whitesmoke;
+  font-family: 'Play';
+  animation: greeting 5s 1 forwards;
+}
 
 
 
+@keyframes table {
+
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+@keyframes greeting{
+  0%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 
 
 @keyframes status{

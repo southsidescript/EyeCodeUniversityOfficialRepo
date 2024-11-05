@@ -5,8 +5,8 @@ let result_data = [
     {   id:1,
         name:'Тимофей Столяров',
         codeQuantity:10,
-        creativity:9,
-        percent:90,
+        creativity:10,
+        percent:100,
         status:true,
         english:10
     },
@@ -14,7 +14,7 @@ let result_data = [
         id:2,
         name:'Вадим Болотников',
         codeQuantity:9,
-        creativity:8,
+        creativity:9,
         percent:100,
         status:true,
         english:8
@@ -22,11 +22,11 @@ let result_data = [
     {
         id:3,
         name:'Алек Ефремов',
-        codeQuantity:7,
-        creativity:6,
-        percent:100,
-        status:true,
-        english:5
+        codeQuantity:0,
+        creativity:0,
+        percent:0,
+        status:false,
+        english:2
     },
     {
         id:4,
@@ -49,9 +49,9 @@ let result_data = [
     {
         id:6,
         name:'Радионов Михаил',
-        codeQuantity:8,
+        codeQuantity:10,
         creativity:10,
-        percent:70,
+        percent:100,
         status:true,
         english:5
     },
@@ -96,15 +96,15 @@ let result_data = [
         name:'Михаил Ортлиб',
         codeQuantity:10,
         creativity:10,
-        percent:100,
-        status:true,
+        percent:80,
+        status:false,
         english:6
     },
     {
         id:12,
         name:'Чибисов Стас',
-        codeQuantity:10,
-        creativity:10,
+        codeQuantity:9,
+        creativity:8,
         percent:100,
         status:false,
         english:7
@@ -112,9 +112,9 @@ let result_data = [
     {
         id:13,
         name:'Рауль',
-        codeQuantity:10,
-        creativity:10,
-        percent:100,
+        codeQuantity:5,
+        creativity:7,
+        percent:70,
         status:true,
         english:8
     },
@@ -148,8 +148,8 @@ let result_data = [
     {
         id:17,
         name:'Имран',
-        codeQuantity:5,
-        creativity:5,
+        codeQuantity:9,
+        creativity:4,
         percent:60,
         status:true,
         english:3
