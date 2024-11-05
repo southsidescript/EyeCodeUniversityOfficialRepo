@@ -104,9 +104,9 @@ let result_data = [
         id:12,
         name:'Чибисов Стас',
         codeQuantity:9,
-        creativity:8,
+        creativity:10,
         percent:100,
-        status:false,
+        status:true,
         english:7
     },
     {
