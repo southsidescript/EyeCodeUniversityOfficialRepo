@@ -33,7 +33,7 @@ const Loading = () => {
         },2000);
 
         return ()=>{
-           ;v
+
         }
 
 
