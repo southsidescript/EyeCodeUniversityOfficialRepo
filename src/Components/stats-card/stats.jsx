@@ -70,7 +70,7 @@ const StatsCard = (props) => {
 
                   </div>
 
-                  <RadarChart outerRadius={90} width={730} height={250} data={data}>
+                  <RadarChart className='chart-text'  outerRadius={90} width={730} height={250} data={data}>
                       <PolarGrid />
                       <PolarAngleAxis dataKey="subject" />
                       <PolarRadiusAxis angle={0} domain={[0, 100]} />

@@ -181,7 +181,10 @@ strong {
     }
 }
 
+.chart-text {
+    font-size: 0.7rem !important;
 
+}
 
 
 .none{
