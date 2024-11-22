@@ -41,7 +41,7 @@ const Card = ({name,image,status,codeQuantity,percentage,creativity,english}) =>
 
              <div>
                  <button type="button" className={styles.card_btn}>
-                    Подробнее
+                   Info
                  </button>
 
              </div>
