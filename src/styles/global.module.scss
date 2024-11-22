@@ -257,11 +257,30 @@
     left: calc(50% - 45vw);
     top: calc(50% - 45vh);
   }
+
+  .stats_table{
+    width: 100vw;
+    
+  }
+
+  .stats_title{
+    width: 100%;
+    font-size: 4rem;
+    text-align: center;
+  }
+
+  .card{
+    height: 9vh;
+  }
+
+  
 }
 
 
 @media screen and (max-width: 700px) {
-
+  .stats_table{
+    box-shadow: 0px -5px 100px rgb(0, 0, 154);
+  }
 
       .stats_card{
         flex-direction: column;
@@ -275,7 +294,9 @@
 
 @media screen and (max-width: 600px)
 {
+ 
 
+  
   #logo{
     width: 10px;
   }
@@ -302,8 +323,14 @@
 
 
 @media screen and (max-width: 500px){
+  .stats_table{
+    box-shadow: 0px -5px 100px rgb(0, 0, 154);
+  }
+  
   .card{
     width: 90vw;
+     
+
 
     &_name{
       font-size: 0.8rem;
@@ -312,7 +339,7 @@
     &_btn{
       width: 4rem;
       height: 2rem;
-      font-size: 0.5rem;
+      font-size: 0.6rem;
     }
 
     &_status{
