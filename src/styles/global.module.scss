@@ -148,6 +148,7 @@
     justify-content: center;
     gap: 10px;
     font-family: monospace;
+    font-size: 0.7rem;
   }
 
   &_status_active {
@@ -313,7 +314,7 @@
 @media screen and (max-width: 600px)
 {
  
-
+ 
   
   #logo{
     width: 10px;
@@ -361,7 +362,7 @@
     }
 
     &_status{
-      font-size: 0.8rem;
+      font-size: 0.5rem;
     }
   }
 }

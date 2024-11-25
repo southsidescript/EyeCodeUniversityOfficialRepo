@@ -86,7 +86,7 @@ const StatsCard = (props) => {
                       <div className={style.stats_creativity}>Креативность:{creativity}/10</div>
                       <div className={style.stats_total}>Итого: {setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10)}
                          <Image
-                          src={setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10) < 50?'/failed.png':'/mark.png'}
+                          src={setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10) < 50?'/delete.png':'/mark.png'}
                           width={30}
                           height={30}
                           alt='mark'
