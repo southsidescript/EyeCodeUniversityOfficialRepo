@@ -5,12 +5,13 @@ import {useContext, useEffect} from "react";
 import { ThemeContext} from '../../Context/Context';
 import '../../styles/global.css';
 import {RadarChart,PolarGrid,PolarAngleAxis,PolarRadiusAxis,PieChart,Pie,Radar,Legend} from 'recharts';
+import { setTotalCalc } from '@/module/module';
 
 const StatsCard = (props) => {
 
     const {activeWindow,setActiveWindow} = useContext(ThemeContext);
 
-    const {name,codeQuantity,percent,creativity,english} = props;
+    const {name,codeQuantity,percent,creativity,english,total} = props;
 
     const data = [
         {
@@ -35,7 +36,7 @@ const StatsCard = (props) => {
         },
         {
             "subject": "Total",
-            "A": ((creativity * 10) + (codeQuantity * 10) + percent + (english * 10))/4,
+            "A": setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10),
             "fullMark": 100
         },
 
@@ -70,11 +71,11 @@ const StatsCard = (props) => {
 
                   </div>
 
-                  <RadarChart className='chart-text'  outerRadius={90} width={730} height={250} data={data}>
+                  <RadarChart className='chart-text'  outerRadius={90} width={330} height={250} data={data}>
                       <PolarGrid />
                       <PolarAngleAxis dataKey="subject" />
                       <PolarRadiusAxis angle={0} domain={[0, 100]} />
-                      <Radar name={name} dataKey="A" stroke="#8884d8" fill="#8884d8" fillOpacity={0.5} />
+                      <Radar name={name} dataKey="A"  stroke="#8884d8" fill="#8884d8" fillOpacity={0.5} />
                       <Legend />
                   </RadarChart>
 
@@ -83,6 +84,14 @@ const StatsCard = (props) => {
                       <div className={style.stats_code_quantity}> Качество кода: <br/> {codeQuantity} /10</div>
                       <div className={style.stats_code_percentage}>ПВЗ:{percent}%</div>
                       <div className={style.stats_creativity}>Креативность:{creativity}/10</div>
+                      <div className={style.stats_total}>Итого: {setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10)}
+                         <Image
+                          src={setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10) < 50?'/failed.png':'/mark.png'}
+                          width={30}
+                          height={30}
+                          alt='mark'
+                         />
+                      </div>
                   </div>
 
 

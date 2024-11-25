@@ -156,8 +156,16 @@ let result_data = [
     }
 ]
 
+function setTotalCalc(a,b,c,d){
+     let result = (a + b + c + d) / arguments.length;
+     console.log(result)
+    return result;
+}
+
+
   module.exports = {
-   result_data
+   result_data,
+   setTotalCalc
   }
 
 

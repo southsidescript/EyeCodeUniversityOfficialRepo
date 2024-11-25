@@ -15,7 +15,12 @@
   gap: 25px;
   background-attachment: fixed;
   font-family: "Play", sans-serif;
- 
+  &_total{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+  }
 
   &_title{
     font-size: 5rem;
@@ -61,13 +66,16 @@
     padding:5%;
     border-radius: 10px;
     box-shadow: 0px 0px 0px white;
-
+   
 
     &_content{
       display: flex;
        flex-direction: column;
       gap: 20px;
+      
     }
+
+    
   }
 
   
@@ -139,6 +147,7 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+    font-family: monospace;
   }
 
   &_status_active {
