@@ -15,7 +15,7 @@ const StatsCard = (props) => {
 
     const data = [
         {
-            "subject": "Code Quantity",
+            "subject": "Code Quality",
             "A": codeQuantity * 10,
             "fullMark": 100
         },

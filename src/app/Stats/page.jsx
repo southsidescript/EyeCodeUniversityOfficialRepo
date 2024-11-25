@@ -20,7 +20,9 @@ import  { useContext } from "react";
                 <div className={style.stats_table}>
                     {result_data.map(n => {
                         return <li key={n.id}>
-                            <Card name={n.name} english={n.english} status={n.status} codeQuantity={n.codeQuantity} percentage={n.percent} creativity={n.creativity} total={n.total}/>
+                            <Card name={n.name} english={n.english} status={n.status} codeQuantity={n.codeQuantity} percentage={n.percent} creativity={n.creativity} total={n.total
+                                
+                            }/>
                         </li>
                     })}
                 </div>
