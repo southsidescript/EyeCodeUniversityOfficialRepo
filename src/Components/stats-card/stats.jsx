@@ -4,7 +4,7 @@ import '../../styles/global.css'
 import {useContext, useEffect} from "react";
 import { ThemeContext} from '../../Context/Context';
 import '../../styles/global.css';
-import {RadarChart,PolarGrid,PolarAngleAxis,PolarRadiusAxis,PieChart,Pie,Radar,Legend} from 'recharts';
+import {RadarChart,PolarGrid,PolarAngleAxis,PolarRadiusAxis,PieChart,Pie,Radar,Legend,ResponsiveContainer} from 'recharts';
 import { setTotalCalc } from '@/module/module';
 
 const StatsCard = (props) => {
@@ -62,22 +62,29 @@ const StatsCard = (props) => {
 
                   <div>
                       <Image
-                          id={'logo'}
+                         
                           src={'/user3.png'}
                           width={180}
                           height={180}
+                         className={style.responsUser}
                           alt={'user'}
+                         
                       />
 
                   </div>
 
-                  <RadarChart className='chart-text'  outerRadius={90} width={330} height={250} data={data}>
-                      <PolarGrid />
-                      <PolarAngleAxis dataKey="subject" />
-                      <PolarRadiusAxis angle={0} domain={[0, 100]} />
-                      <Radar name={name} dataKey="A"  stroke="#8884d8" fill="#8884d8" fillOpacity={0.5} />
-                      <Legend />
-                  </RadarChart>
+
+
+                            <RadarChart  className='chart-text'    outerRadius={90} width={330} height={220} data={data}>
+                                    <PolarGrid />
+                                    <PolarAngleAxis dataKey="subject" />
+                                    <PolarRadiusAxis angle={0} domain={[0, 100]} />
+                                    <Radar name={name} dataKey="A"  stroke="#8884d8" fill="#8884d8" fillOpacity={0.5} />
+                                    <Legend />
+                                </RadarChart>
+
+                 
+
 
                   <div className={style.stats_card_content}>
                       <div className={style.stats_name}> {name}</div>

@@ -212,6 +212,7 @@
 
 
 
+
 @keyframes table {
 
   0%{
@@ -342,10 +343,17 @@
 
 
 @media screen and (max-width: 500px){
+   
+  .responsUser{
+    width: 140px; 
+    height: 140px;
+}
+  
   .stats_table{
     box-shadow: 0px -5px 100px rgb(0, 0, 154);
+    
   }
-  
+   
   .card{
     width: 90vw;
      
@@ -365,4 +373,36 @@
       font-size: 0.5rem;
     }
   }
+}
+
+
+
+
+@media screen and (max-width:375px) {
+  .responsUser{
+       width: 120px; 
+       height: 120px;
+  }
+ 
+  .stats{
+      
+    &_card{
+
+    justify-content: space-between;
+
+
+      &_content{
+        font-size: 12px;
+        height: 30%;
+      }
+    }
+
+    &_card{
+      height: 95vh;
+    }
+   }
+
+  
+
+
 }
