@@ -25,7 +25,7 @@ let result_data = [
         codeQuantity:8,
         creativity:8,
         percent:90,
-        status:false,
+        status:true,
         english:2
     },
     {
