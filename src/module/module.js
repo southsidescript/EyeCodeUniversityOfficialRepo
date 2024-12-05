@@ -113,7 +113,7 @@ let result_data = [
         id:13,
         name:'Рауль',
         codeQuantity:10,
-        creativity:80,
+        creativity:8,
         percent:100,
         status:true,
         english:10
