@@ -112,10 +112,10 @@ let result_data = [
     {
         id:13,
         name:'Рауль',
-        codeQuantity:0,
-        creativity:0,
-        percent:0,
-        status:false,
+        codeQuantity:10,
+        creativity:80,
+        percent:100,
+        status:true,
         english:10
     },
     {
@@ -139,10 +139,10 @@ let result_data = [
     {
         id:16,
         name:'Александр Штейнле',
-        codeQuantity:0,
-        creativity:0,
-        percent:0,
-        status:false,
+        codeQuantity:10,
+        creativity:9,
+        percent:90,
+        status:true,
         english:6
     },
     {  
