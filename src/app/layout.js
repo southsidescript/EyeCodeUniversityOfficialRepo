@@ -18,7 +18,7 @@ export const metadata = {
   title: "EyeCode University Stats",
   description: "Welcome to EyeCode University Stats",
     icons: {
-      icon:'/eyelogov6.png',
+      icon:'/eyeicondark.png',
     }
 };
 
