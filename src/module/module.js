@@ -7,7 +7,7 @@ let result_data = [
         codeQuantity:10,
         creativity:10,
         percent:60,
-        status:false,
+        status:true,
         english:6
     },
     {
@@ -94,20 +94,20 @@ let result_data = [
     {
         id:11,
         name:'Михаил Ортлиб',
-        codeQuantity:0,
-        creativity:0,
-        percent:0,
-        status:false,
+        codeQuantity:7,
+        creativity:6,
+        percent:70,
+        status:true,
         english:6
     },
     {
         id:12,
         name:'Чибисов Стас',
-        codeQuantity:0,
-        creativity:0,
-        percent:0,
-        status:false,
-        english:7
+        codeQuantity:10,
+        creativity:5,
+        percent:70,
+        status:true,
+        english:8
     },
     {
         id:13,
