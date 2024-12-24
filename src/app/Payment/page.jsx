@@ -33,8 +33,8 @@ return(
          <section className={style.payment_content}>
           
            
-  <PaymentButton status={true}>Оплата переводом</PaymentButton>
-  <PaymentButton status={false}>Оплата онлайн</PaymentButton>
+             <PaymentButton status={true}>Оплата переводом</PaymentButton>
+             <PaymentButton status={false}>Оплата онлайн</PaymentButton>
          </section>
     
 

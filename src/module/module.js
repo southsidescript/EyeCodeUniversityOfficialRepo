@@ -4,19 +4,19 @@
 let result_data = [
     {   id:1,
         name:'Тимофей Столяров',
-        codeQuantity:10,
-        creativity:10,
-        percent:60,
-        status:true,
+        codeQuantity:0,
+        creativity:0,
+        percent:0,
+        status:false,
         english:6
     },
     {
         id:2,
         name:'Вадим Болотников',
-        codeQuantity:10,
-        creativity:10,
-        percent:100,
-        status:true,
+        codeQuantity:0,
+        creativity:0,
+        percent:0,
+        status:false,
         english:8
     },
     {
@@ -50,7 +50,7 @@ let result_data = [
         id:6,
         name:'Радионов Михаил',
         codeQuantity:10,
-        creativity:8,
+        creativity:10,
         percent:100,
         status:true,
         english:6
@@ -68,7 +68,7 @@ let result_data = [
         id:8,
         name:'Чингиз',
         codeQuantity:10,
-        creativity:10,
+        creativity:8,
         percent:100,
         status:true,
         english:9
@@ -76,10 +76,10 @@ let result_data = [
     {
         id:9,
         name:'Арон',
-        codeQuantity:0,
-        creativity:0,
-        percent:0,
-        status:false,
+        codeQuantity:8,
+        creativity:7,
+        percent:70,
+        status:true,
         english:6
     },
     {
@@ -104,7 +104,7 @@ let result_data = [
         id:12,
         name:'Чибисов Стас',
         codeQuantity:10,
-        creativity:5,
+        creativity:10,
         percent:70,
         status:true,
         english:8
@@ -112,10 +112,10 @@ let result_data = [
     {
         id:13,
         name:'Рауль',
-        codeQuantity:10,
-        creativity:10,
+        codeQuantity:0,
+        creativity:0,
         percent:70,
-        status:true,
+        status:false,
         english:6
     },
     {
@@ -156,10 +156,10 @@ let result_data = [
     },  {  
         id:18,
         name:'Артем',
-        codeQuantity:3,
-        creativity:9,
-        percent:70,
-        status:true,
+        codeQuantity:0,
+        creativity:0,
+        percent:50,
+        status:false,
         english:5
     }
 ]
