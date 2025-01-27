@@ -1,47 +1,52 @@
-import React from "react";
-import style from '../../styles/global.module.scss'
+import DesignStation from "@/Components/design-station/DesignStation";
+import style from '../../styles/global.module.scss';
 import Image from "next/image";
-import PaymentButton from "@/Components/payment-button/Payment";
+import PaymentCard from "@/Components/payment-button/Payment";
+import Header from "@/Components/header/Header";
+const Payment = () => {
 
-const Payment = ()=> {
-   
 
-    
-return(
-    <section className={style.payment}>
+    return( 
+        <section className={style.payment}>
+          <Header/>  
+            <div className={style.container}>
+               
+                     <DesignStation/>
                 
-         <header className={style.payment_header}>
-            
-         {/* <div className={style.payment_logo}>
-             <Image
-              src={'/eyelogov6.png'}
-              width={80}
-              height={60}
-              alt="logo"
+              
+                <h2 className={style.payment_heading}>  Оплата обучения</h2>
+
+                 <div className={style.payment_details}>
+                          <PaymentCard 
+                          type={'Система переводов МИР'}
+                          image={ {
+                            src:'/mir-logo.png',
+                           width:40,
+                           height:10    
+                        } }
+                          number={'2202 2023 3035 2026'}
+                          currency={'₽ (RUB)'}
+                           
+                           
+                           />
+
+                        <PaymentCard 
+                          type={'Система переводов VISA'}
+                          image={ {
+                            src:'/visa-logo.png',
+                           width:48,
+                           height:48    
+                        } }
+                          number={'2202 2023 3035 2026'}
+                          currency={'$ (Dollar USA)'}
+                           
+                           /> 
+                     </div>      
+                     </div>
+        </section>
+ 
        
-             />
-            </div>            */}
-            
-            <div className={style.payment_header_heading}>
-             Оплата за обучение
-            </div>
-
-
-
-         </header>
-
-         <section className={style.payment_content}>
-          
-           
-             <PaymentButton status={true}>Оплата переводом</PaymentButton>
-             <PaymentButton status={false}>Оплата онлайн</PaymentButton>
-         </section>
-    
-
-
-
-    </section>
-)
+   )
 
 }
 

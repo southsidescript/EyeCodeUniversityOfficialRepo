@@ -4,14 +4,28 @@ import Image from 'next/image';
 
 
 
-const PaymentButton = (props) => {
+const PaymentCard = (props) => {
   
-const {status,children} = props;
+
         
     return(
         
-        <button className={status?style.payment_btn:style.payment_btn_disable}>{props.children}</button>
+       <article className={style.payment_card}>
+         <p > {props.type}</p>
+          <div className={style.payment_card_data}>
+              <Image 
+                src={props.image.src}
+                width={props.image.width}
+                height={props.image.height}
+                alt="card"
+               /> 
 
+               <div className={style.payment_card_data_currency}>Валюта: <span>{props.currency}</span></div> 
+               <div className={style.payment_card_data_number}>{props.number}</div>  
+               <button className={style.payment_card_data_btn}>Скопировать</button>  
+          </div>
+
+       </article>
     )
 
 
@@ -19,4 +33,4 @@ const {status,children} = props;
 
 }
 
-export default PaymentButton;
+export default PaymentCard;

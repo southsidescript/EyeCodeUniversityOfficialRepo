@@ -6,6 +6,7 @@ import { result_data } from '@/module/module'
 import StatsCard from "@/Components/stats-card/stats";
 import {ThemeContext} from "../../Context/Context";
 import  { useContext } from "react";
+import Header from '@/Components/header/Header';
 
  const  Stats = () => {
 
@@ -13,6 +14,10 @@ import  { useContext } from "react";
 
     return(
             <main className={style.stats}>
+
+            <Header/>
+                
+                  
                 {activeWindow?<StatsCard active={activeWindow} english={userData.english} name={userData.name} codeQuantity={userData.codeQuantity} creativity={userData.creativity} percent={userData.percentage}/>:''}
                 
                 <div className={style.stats_title}>Weekly results</div>

@@ -2,7 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 .stats{
   color: white;
   width: 100vw;
@@ -179,10 +180,14 @@
 
 }
 
+.container{
+  width: 80vw;
+  margin: 0 auto;
+}
 
 .loading{
-   height: 100vh;
-   background:linear-gradient(120deg,rgb(0, 0, 80),black);
+  height: 100vh;
+  background:linear-gradient(120deg,rgb(0, 0, 80),black);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -211,101 +216,291 @@
   animation: greeting 5s 1 forwards;
 }
 
-.payment{
- 
-  width: 100vw;
-  height: 100vh;
-   padding-top: 25px;
+.home{
+  background: black;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-
-  background-color: black;
-   background: radial-gradient(ellipse 20% 30% at bottom ,rgb(29, 0, 41) ,black);
-
-           
   align-items: center;
-
-
-
-&_btn{ 
-   border: none ;
-  background: none ;
-  outline: none ;
-  width: 200px;
-  height: 50px;
-box-shadow: 0px 0px 5px white;
-border-radius: 5px;
-position: relative;
-transition: all .2s ease;
-&:hover{
-  box-shadow: 0px 0px 5px rgb(47, 0, 255);
-}
-&_disable{
-  width: 200px;
-  height: 50px;
-  box-shadow: 0px 0px 5px rgb(110, 110, 110);
-  border: none ;
-  background: none ;
-  outline: none ;
-  border-radius: 5px;
-  color: rgb(37, 37, 37);
+  justify-content: center;
   position: relative;
-  &::after{
-    content: 'Скоро';
-    width: 50px;
-    height: 50px;
-    color: white;
-    font-size: 10px;
-    position: absolute;
-    top: 120%;
-    left: calc(50% - 25px);
-    animation: status 3s infinite;
+  &_heading{
+    height: 100px;
+    z-index: 1;
     letter-spacing: 1px;
-  }
-} 
-
-}
-
-  &_logo{
-      
-  }
-  
-  &_header{
-    width: 80vw;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: "Martian Mono", monospace;
+    font-size: 5rem;
+    color: white;
     font-weight: bold;
-    border-radius: 10px;
-    
-
-
-    &_heading{
+    text-transform: uppercase;
+   text-align: center;
+    & sup{
+      width: 200px;
       font-size: 2rem;
       color: transparent;
       background-clip: text;
-      background-image: linear-gradient(120deg,white,rgb(255, 255, 255));
+      z-index: 4;
+      background-image: linear-gradient(120deg,white,black 0,10%,white);
+
     }
   }
 
-  &_content{
-    width: 60vw;
-    height: 100%;
-    margin-top: 3%;
-    border-top: 2px solid rgb(31, 0, 59);
-    border-radius: 15px;
-    background-color: rgba(0, 31, 28, 0.1);
-    backdrop-filter: blur(10px);
+
+  &_nav{
+    position: fixed;
+    bottom: 5vh;
+    color: white;
+    font-family: Arial;
+    font-size: 14px;
+    width: 50vw;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 2%;
+    justify-content: space-between;
+    height: 20vh;
+
+    & div{
+      width: 150px;
+      height: 50px;
+      border: 1px dotted gray;
+      border-radius: 5px;
+      text-align: center;
+      align-content: center;
+
+      position: relative;
+      background: black;
+    }
+    &_button{
+      background: linear-gradient(120deg,orange 0,20% ,blue);
+
+      width: 150px;
+       border: none;
+      outline: none;
+      color: white;
+      text-transform: uppercase;
+      font-weight: bold;
+      height: 50px;
+      clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+   border-radius: 5px;
+       z-index: 1;
+
+    }
+    &_firstelement{
+      position: relative;
+      &::after{
+
+        position: absolute;
+        left: 0px;
+
+        top: 50%;
+        content: '';
+        width: 50px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 1px #0000ff;
+        height: 1px;
+        background: #000094;
+        animation: beamtoright 5s infinite;
+        z-index: -1;
+      }
+    }
+    &_lastelement{
+
+      position: relative;
+      &::after{
+
+        position: absolute;
+        right: 0px;
+
+        top: 50%;
+        content: '';
+        width: 50px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 5px 1px #0000ff;
+        height: 1px;
+        background: #000094;
+        animation: beamtoleft 5s infinite;
+         z-index: -1;
+      }
+    }
+  }
+
+
+  &_design{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: calc(50% - 200px);
+    top: calc(50% - 200px);
+    border-radius: 40% 60% 70% 30% / 30% 70% 60% 40%;
+    filter: blur(50px);
+    opacity: 0.8;
+
+    animation: morph 10s infinite cubic-bezier(0.4, 0, 0.2, 1), rotateColors 12s infinite linear;
   }
 }
 
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  overflow: hidden;
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+ 
 
+  width: 90vw;
+  margin: 0 auto;
+
+
+  &_logo{
+    display: flex;
+    align-items: center;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    justify-content: center;
+    font-size:1.1rem;
+ 
+    & img{
+      filter: drop-shadow(0px 0px 2px black);
+    }
+
+  }
+}
+
+.payment{
+width: 100vw;
+min-height: 100vh;
+display: flex;
+flex-direction: column;
+align-items: center;
+z-index: 1000;
+
+&_heading{
+  font-size: 3rem;
+  z-index: 1000 !important;
+}
+&_card{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: black;
+  & p{
+    font-family: Arial;
+    font-weight: 600;
+    font-size: 1.1rem;
+     color: white;
+     
+  }
+
+  &_data{
+   
+  font-family: "Space Grotesk", serif;
+    font-size: 0.9rem;
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color: white;
+     
+    &_currency{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 0.8rem;
+    }
+    &_btn{
+      background-color: rgb(43, 15, 145);
+      color: white;
+      outline: none;
+      border: none;
+       width: 100px;
+       border-radius: 5px;
+       font-weight: bold;
+       height: 40px;
+    }
+
+
+  }
+   
+
+
+  z-index: 2;
+ border-radius: 10px;
+  width: 600px;
+  padding: 20px;
+  height: 150px;
+}
+
+&_details{
+  // background-color: rgb(223, 223, 223);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: space-evenly;
+  flex-direction: column;
+  min-height: 50vh;
+}
+}
+
+
+
+
+@keyframes beamtoleft{
+  0%{transform: translateX(0px);}
+  100%{transform: translateX( -25vw);}
+}
+@keyframes beamtoright{
+  0%{transform: translateX(0px);}
+  100%{transform: translateX( 25vw);}
+}
+
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 70% 30% / 30% 70% 60% 40%;
+    transform: translate(0, 0) scale(1);
+  }
+  25% {
+    border-radius: 60% 40% 50% 50% / 50% 60% 40% 60%;
+    transform: translate(-50px, 20px) scale(1.1);
+  }
+  50% {
+    border-radius: 50% 50% 60% 40% / 60% 50% 40% 50%;
+    transform: translate(50px, -30px) scale(1.2);
+  }
+  75% {
+    border-radius: 70% 30% 40% 60% / 40% 60% 30% 70%;
+    transform: translate(-20px, -50px) scale(1.1);
+  }
+  100% {
+    border-radius: 40% 60% 70% 30% / 30% 70% 60% 40%;
+    transform: translate(0, 0) scale(1);
+  }
+}
+
+@keyframes rotateColors {
+  0% {
+   background: blue;
+  }
+  10%{
+    background: darkblue;
+  }
+  20%{
+    background:darkviolet;
+  }
+  40%{
+    background:darkblue;
+  }
+  50%{
+    background: blue;
+  }
+  75%{
+
+  }
+  100% {
+    background: blue;
+  }
+}
 
 @keyframes table {
 
@@ -316,7 +511,6 @@ transition: all .2s ease;
     opacity: 1;
   }
 }
-
 
 @keyframes greeting{
   0%{
@@ -329,7 +523,6 @@ transition: all .2s ease;
     opacity: 0;
   }
 }
-
 
 @keyframes status{
   0%{
@@ -353,7 +546,6 @@ transition: all .2s ease;
     transform: scale(1) rotateY(360deg);
   }
 }
-
 
 
 
@@ -392,7 +584,6 @@ transition: all .2s ease;
   
 }
 
-
 @media screen and (max-width: 700px) {
   .stats_table{
     box-shadow: 0px -5px 100px rgb(0, 0, 154);
@@ -410,10 +601,7 @@ transition: all .2s ease;
 
 @media screen and (max-width: 600px){
  
- .payment_content{
-  width: 100vw;
-  background: radial-gradient(ellipse 50% 20% at bottom ,rgb(29, 0, 41) ,black);
- }
+
   
   #logo{
     width: 10px;
@@ -439,9 +627,38 @@ transition: all .2s ease;
 
 }
 
-
 @media screen and (max-width: 500px){
    
+.payment{
+  &_card{
+    width: 90vw;
+    height: 20vh;
+  }
+}
+
+.header{
+   
+   &_menu{
+      & img{
+        width: 25px;
+        height: 25px;
+      }
+   }
+
+   &_logo{
+    font-size: 0.8rem;
+
+    & img{
+      width: 80px;
+      height: 62px;
+    }
+   }
+}
+
+.container{
+  width: 90vw;
+}
+
   .responsUser{
     width: 140px; 
     height: 140px;

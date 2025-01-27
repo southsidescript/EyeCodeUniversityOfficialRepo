@@ -1,7 +1,7 @@
 import localFont from "next/font/local";
 import "./globals.css";
 import SendContextApi from "@/Context/Context";
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
         <body className={`${geistSans.variable} ${geistMono.variable}`}>
                                 {children}
+                                <SpeedInsights />
         </body>
         </html>
       </SendContextApi>

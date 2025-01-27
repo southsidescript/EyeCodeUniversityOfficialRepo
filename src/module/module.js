@@ -26,7 +26,8 @@ let result_data = [
         creativity:0,
         percent:0,
         status:false,
-        english:2
+        english:2,
+        coin:0
     },
     {
         id:4,
@@ -153,7 +154,8 @@ let result_data = [
         percent:90,
         status:true,
         english:5
-    },  {  
+    },  
+    {  
         id:18,
         name:'Артем',
         codeQuantity:0,
