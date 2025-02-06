@@ -81,7 +81,7 @@ const StatsCard = (props) => {
                                     <PolarRadiusAxis angle={0} domain={[0, 100]} />
                                     <Radar name={name} dataKey="A"  stroke="#8884d8" fill="#8884d8" fillOpacity={0.5} />
                                     <Legend />
-                                </RadarChart>
+                            </RadarChart>
 
                  
 
@@ -97,6 +97,7 @@ const StatsCard = (props) => {
                           width={30}
                           height={30}
                           alt='mark'
+                          loading='lazy'
                          />
                       </div>
                   </div>
