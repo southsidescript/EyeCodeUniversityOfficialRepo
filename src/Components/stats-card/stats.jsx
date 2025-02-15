@@ -5,7 +5,8 @@ import {useContext, useEffect} from "react";
 import { ThemeContext} from '../../Context/Context';
 import '../../styles/global.css';
 import {RadarChart,PolarGrid,PolarAngleAxis,PolarRadiusAxis,PieChart,Pie,Radar,Legend,ResponsiveContainer} from 'recharts';
-import { setTotalCalc } from '@/module/module';
+
+import { setTotalCalc } from '@/utils/helpers';
 
 const StatsCard = (props) => {
 
@@ -89,15 +90,17 @@ const StatsCard = (props) => {
                   <div className={style.stats_card_content}>
                       <div className={style.stats_name}> {name}</div>
                       <div className={style.stats_code_quantity}> Качество кода: <br/> {codeQuantity} /10</div>
-                      <div className={style.stats_code_percentage}>ПВЗ:{percent}%</div>
-                      <div className={style.stats_creativity}>Креативность:{creativity}/10</div>
+                      <div className={style.stats_code_percentage}>ПВЗ: {percent}%</div>
+                      <div className={style.stats_creativity}>Креативность: {creativity}/10</div>
+                      <div>Английский: {english} / 10</div> 
                       <div className={style.stats_total}>Итого: {setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10)}
+                    
                          <Image
                           src={setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10) < 50?'/delete.png':'/mark.png'}
                           width={30}
                           height={30}
                           alt='mark'
-                          loading='lazy'
+                     
                          />
                       </div>
                   </div>

@@ -1,5 +1,3 @@
-'use client'
-
 import styles from '../.././styles/global.module.scss';
 import Image from "next/image";
 import StatsCard from '../stats-card/stats';

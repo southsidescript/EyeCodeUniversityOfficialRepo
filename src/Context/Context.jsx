@@ -11,7 +11,9 @@ const [activeWindow, setActiveWindow] = useState(false);
 const [userData,setUserData] = useState('');
 
 return(
-    <ThemeContext.Provider  value={{activeWindow, setActiveWindow,userData,setUserData}} >{children}</ThemeContext.Provider>
+    <ThemeContext.Provider  value={{activeWindow, setActiveWindow,userData,setUserData}} >
+        {children}
+    </ThemeContext.Provider>
 )
 }
 export default SendContextApi;

@@ -2,7 +2,7 @@
 
 import style from '../../styles/global.module.scss';
 import Card from "../../Components/user-card/Card";
-import { result_data } from '@/module/module'
+import { result_data } from '@/data/students'
 import StatsCard from "@/Components/stats-card/stats";
 import {ThemeContext} from "../../Context/Context";
 import  { useContext } from "react";
@@ -20,7 +20,7 @@ import Header from '@/Components/header/Header';
                   
                 {activeWindow?<StatsCard active={activeWindow} english={userData.english} name={userData.name} codeQuantity={userData.codeQuantity} creativity={userData.creativity} percent={userData.percentage}/>:''}
                 
-                <div className={style.stats_title}>Weekly results</div>
+                <div className={style.stats_title}>Результаты недели</div>
                 
                 <div className={style.stats_table}>
                     {result_data.map(n => {
