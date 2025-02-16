@@ -9,20 +9,7 @@ export const desktopOS = [
     { id: 2, value: 4500, label: 'Support' }
   ];
   
-  export const mobileOS = [
-    {
-      label: 'Android',
-      value: 70.48,
-    },
-    {
-      label: 'iOS',
-      value: 28.8,
-    },
-    {
-      label: 'Other',
-      value: 0.71,
-    },
-  ];
+ 
   
   export const platforms = [
     {
@@ -38,11 +25,7 @@ export const desktopOS = [
   const normalize = (v, v2) => Number.parseFloat(((v * v2) / 100).toFixed(2));
   
   export const mobileAndDesktopOS = [
-        ...mobileOS.map((v) => ({
-        ...v,
-        label: v.label === 'Other' ? 'Other (Mobile)' : v.label,
-        value: normalize(v.value, platforms[0].value),
-        })),
+   
     ...desktopOS.map((v) => ({
       ...v,
       label: v.label === 'Other' ? 'Other (Desktop)' : v.label,

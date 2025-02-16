@@ -32,7 +32,7 @@ const Order = () => {
             </ul>
             <div className='order-chart'>
             <PieChart
-           colors={['blue', 'yellowgreen', 'purple']}
+           colors={['blue', 'yellowgreen', 'white']}
                 series={[
                     {
                     data: desktopOS,

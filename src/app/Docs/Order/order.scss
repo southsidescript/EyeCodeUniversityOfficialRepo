@@ -72,7 +72,7 @@ ul,li,ol{
             height: 8px;
             border-radius: 50%;
             background-color: orange;
-            animation: blink 4s infinite linear;
+            animation: blink 3s infinite linear;
         
         }
        }
@@ -127,8 +127,8 @@ ul,li,ol{
     &_total-price{
         font-size: 2rem;
         color: white;
-        font-family: 'Roboto';
-        font-weight: bold;
+   
+    
         position: relative;
        
 
@@ -143,8 +143,17 @@ ul,li,ol{
 @media screen and (max-width:500px){
     .order{
         width: 95vw;
-          
-    
+        border-radius: 30px;  
+        border-top: 2px solid rgb(66, 66, 66);
+       
+      
+        &_total-price{
+            font-size: 1.5rem;
+            & sup{
+                font-size: 0.8rem;
+            }
+        }
+
          &_checklist{
             & ul{
 
@@ -159,8 +168,8 @@ ul,li,ol{
          }
 
         &:after{
-            width: 20%;
-            height: 25px;
+            width: 21%;
+            height: 26px;
             font-size: 10px;
         }
 
