@@ -12,7 +12,7 @@ ul,li,ol{
     border-radius: 15px;
     min-height: 100vh;
     position: relative;
-    
+    animation: slowUp 2s 1;
     &_accept{
         margin-top: 20px;
         width: 150px;
@@ -206,3 +206,13 @@ ul,li,ol{
         opacity: 0;
     }
 }
+@keyframes slowUp{
+    0%{
+        opacity: 0;
+        transform: translateY(100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+} 

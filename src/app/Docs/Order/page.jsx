@@ -1,16 +1,13 @@
-'use client'
-
 import './order.scss'
 import Image from 'next/image';
-import { PieChart } from '@mui/x-charts';
-import { desktopOS, valueFormatter } from './details';
+import Pie from '@/Components/Charts/Pie/Pie';
+
 
 
 const Order = () => {
  
- 
-
     return (
+
       <section className='order'>
             
           <h1>Чек лист</h1>
@@ -31,35 +28,7 @@ const Order = () => {
                 <li> <Image src={'/mark_v2.png'} width={28} height={28} alt='mark'/> Интеграция телеграм Бота для получения сообщений от клиентов  </li>
             </ul>
             <div className='order-chart'>
-            <PieChart
-           colors={['blue', 'yellowgreen', 'white']}
-                series={[
-                    {
-                    data: desktopOS,
-                    highlightScope: { fade: 'global', highlight: 'item' },
-                    faded: { innerRadius: 30, additionalRadius: -30, color: 'gray' },
-                    valueFormatter,
-                    innerRadius:30,
-                    paddingAngle:5,
-                    cornerRadius:10,
-                    cx:100
-                    
-                    },
-                    
-                    
-                ]}
-                width={400}
-                height={200}
-                slotProps={{
-                    legend: {
-                      labelStyle: {
-                        fill: 'white', // Задаем цвет текста
-                        fontSize: 14, // Задаем размер шрифта
-                      },
-                    },
-                  }}
-
-/> 
+               <Pie />
             </div>
         
    
