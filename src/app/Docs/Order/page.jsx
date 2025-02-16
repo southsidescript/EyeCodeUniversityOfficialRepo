@@ -66,7 +66,7 @@ const Order = () => {
           </div>
 
           <div className='order_total-price'>
-           Итого: 21 000 ₽ <sup> <del>30 000 ₽</del> </sup>
+           Итого: 20 990 ₽ <sup> <del>30 000 ₽</del> </sup>
           </div>
           
           <button className='order_accept'>Подтвердить</button>
