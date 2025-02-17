@@ -1,9 +1,9 @@
-import style from '../../styles/global.module.scss'
+import style from '@/styles/global.module.scss'
 import Image from 'next/image'
-import '../../styles/global.css'
+import '@/styles/global.css'
 import {useContext, useEffect} from "react";
-import { ThemeContext} from '../../Context/Context';
-import '../../styles/global.css';
+import { ThemeContext} from '../../../Context/Context';
+
 import {RadarChart,PolarGrid,PolarAngleAxis,PolarRadiusAxis,PieChart,Pie,Radar,Legend,ResponsiveContainer} from 'recharts';
 
 import { setTotalCalc } from '@/utils/helpers';

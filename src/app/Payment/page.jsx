@@ -1,8 +1,8 @@
-import DesignStation from "@/Components/design-station/DesignStation";
+import DesignStation from "@/Components/organisms/design-station/DesignStation";
 import style from '../../styles/global.module.scss';
 import Image from "next/image";
-import PaymentCard from "@/Components/payment-button/Payment";
-import Header from "@/Components/header/Header";
+import PaymentCard from "@/Components/molecules/payment-button/Payment";
+import Header from "@/Components/organisms/header/Header";
 const Payment = () => {
 
 

@@ -1,6 +1,6 @@
 import './order.scss'
 import Image from 'next/image';
-import Pie from '@/Components/Charts/Pie/Pie';
+import Pie from '@/Components/organisms/Charts/Pie/Pie';
 
 
 

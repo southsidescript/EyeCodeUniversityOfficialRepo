@@ -1,9 +1,7 @@
-import styles from '../.././styles/global.module.scss';
+import styles from '@/styles/global.module.scss';
 import Image from "next/image";
 import StatsCard from '../stats-card/stats';
-import { FormItemInputContext } from 'antd/es/form/context';
-import { useEffect, useState } from 'react';
-import '../../styles/global.css'
+import '@/styles/global.css'
 import {ThemeContext} from "@/Context/Context";
 import {useContext} from "react";
 

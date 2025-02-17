@@ -1,4 +1,4 @@
-import Header from "@/Components/header/Header"
+import Header from "@/Components/organisms/header/Header"
 
 export default function ClassicLayout({children}) {
 

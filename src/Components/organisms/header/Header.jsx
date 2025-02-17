@@ -1,4 +1,4 @@
-import style from '../../styles/global.module.scss';
+import style from '@/styles/global.module.scss'
 import Image from 'next/image';
 const Header = () => {
 

@@ -1,12 +1,12 @@
 'use client';
 
 import style from '../../styles/global.module.scss';
-import Card from "../../Components/user-card/Card";
+import Card from "../../Components/organisms/user-card/Card";
 import { result_data } from '@/data/students'
-import StatsCard from "@/Components/stats-card/stats";
+import StatsCard from "@/Components/organisms/stats-card/stats";
 import {ThemeContext} from "../../Context/Context";
 import  { useContext } from "react";
-import Header from '@/Components/header/Header';
+import Header from '@/Components/organisms/header/Header';
 
  const  Stats = () => {
 

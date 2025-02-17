@@ -1,7 +1,5 @@
 'use client';
-
-import style from '../styles/global.module.scss';
-import Image from "next/image";
+import style from '@/styles/global.module.scss'
 import { Spin } from 'antd';
 import { useState } from "react";
 import { useEffect } from 'react';
@@ -11,7 +9,7 @@ import { useRouter } from 'next/navigation';
 const Loading = () => {
 
 
-    const [greeting,setGreeting] = useState('Добро пожаловать в EyeCode University Stats')
+    const [greeting,setGreeting] = useState('Добро пожаловать в EyeCode University')
 
     const [load,setLoad] = useState(true)
     
@@ -38,11 +36,6 @@ const Loading = () => {
 
 
     },[]);
-
-
-
-
-
 
 
 
