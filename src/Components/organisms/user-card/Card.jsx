@@ -33,7 +33,7 @@ const Card = ({name,image,status,codeQuantity,percentage,creativity,english}) =>
               />
 
              <div className={styles.card_name}>{name}</div>
-             <div className={styles.card_status}>{status? 'Done':'Failed'} <div className={status ? styles.card_status_active : styles.card_status_inactive}></div>  </div>
+             <div className={styles.card_status}>{status? 'Выполнено':'Провалено'} <div className={status ? styles.card_status_active : styles.card_status_inactive}></div>  </div>
 
              <div>
                  <button type="button" className={styles.card_btn}>

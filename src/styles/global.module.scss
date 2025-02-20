@@ -666,6 +666,10 @@ z-index: 1000;
     height: 140px;
 }
   
+.stats_title{
+  font-size: 2rem;
+}
+
   .stats_table{
     box-shadow: 0px -5px 100px rgb(0, 0, 154);
 
@@ -707,6 +711,11 @@ z-index: 1000;
  
   .stats{
       
+
+  &_title{
+    font-size: 2rem;
+  }
+
     &_card{
 
     justify-content: space-between;

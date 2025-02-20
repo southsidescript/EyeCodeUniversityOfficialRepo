@@ -15,7 +15,7 @@ const Order = () => {
           <div className='order_info'>
             <p className='order_info_heading'>Заказчик</p>
               <p className='order_info_name'>Алина</p>
-              <p className='order_info_status'>Статус: Ожидает</p>
+              <p className='order_info_status'>Статус: Выполняется</p>
   
           </div>
 
