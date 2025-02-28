@@ -20,9 +20,9 @@ export let result_data = [
     {
         id:3,
         name:'Алек Ефремов',
-        codeQuantity:5,
-        creativity:5,
-        percent:60,
+        codeQuantity:0,
+        creativity:0,
+        percent:0,
         status:true,
         english:4,
         coin:0
