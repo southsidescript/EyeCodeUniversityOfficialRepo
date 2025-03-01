@@ -2,27 +2,27 @@
 export let result_data = [
     {   id:1,
         name:'Тимофей Столяров',
-        codeQuantity:0,
-        creativity:0,
-        percent:0,
+        codeQuantity:8,
+        creativity:7,
+        percent:70,
         status:true,
         english:6
     },
     {
         id:2,
         name:'Вадим Болотников',
-        codeQuantity:0,
-        creativity:0,
-        percent:0,
+        codeQuantity:7,
+        creativity:8,
+        percent:70,
         status:true,
         english:8
     },
     {
         id:3,
         name:'Алек Ефремов',
-        codeQuantity:0,
-        creativity:0,
-        percent:0,
+        codeQuantity:7,
+        creativity:6,
+        percent:90,
         status:true,
         english:4,
         coin:0
@@ -39,9 +39,9 @@ export let result_data = [
     {
         id:5,
         name:'Михаил Третьяк',
-        codeQuantity:10,
-        creativity:4,
-        percent:100,
+        codeQuantity:8,
+        creativity:7,
+        percent:90,
         status:true,
         english:8
     },
