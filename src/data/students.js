@@ -111,9 +111,9 @@ export let result_data = [
     {
         id:13,
         name:'Рауль',
-        codeQuantity:0,
-        creativity:0,
-        percent:40,
+        codeQuantity:5,
+        creativity:3,
+        percent:80,
         status:false,
         english:6
     },
