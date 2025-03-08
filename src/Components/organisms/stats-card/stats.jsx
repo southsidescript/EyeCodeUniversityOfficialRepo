@@ -3,18 +3,21 @@ import Image from 'next/image'
 import '@/styles/global.css'
 import {useContext, useEffect} from "react";
 import { ThemeContext} from '../../../Context/Context';
-
+import { result_data } from '@/data/students';
 import {RadarChart,PolarGrid,PolarAngleAxis,PolarRadiusAxis,PieChart,Pie,Radar,Legend,ResponsiveContainer} from 'recharts';
-
-import { setTotalCalc } from '@/utils/helpers';
+import { setTotalCalc ,fidnUser} from '@/utils/helpers';
 
 const StatsCard = (props) => {
 
-    const {activeWindow,setActiveWindow} = useContext(ThemeContext);
+    const {activeWindow,setActiveWindow,userData} = useContext(ThemeContext);
+   
 
-    const {name,codeQuantity,percent,creativity,english,total} = props;
+   
+    const {name,codeQuantity,percent,creativity,english} = fidnUser(userData,result_data);
 
-    const data = [
+     const total = setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10);
+    
+     const data = [
         {
             "subject": "Code Quality",
             "A": codeQuantity * 10,
@@ -37,13 +40,11 @@ const StatsCard = (props) => {
         },
         {
             "subject": "Total",
-            "A": setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10),
+            "A":total ,
             "fullMark": 100
         },
 
     ]
-
-1
 
 
       return(
@@ -67,9 +68,8 @@ const StatsCard = (props) => {
                           src={'/user3.png'}
                           width={180}
                           height={180}
-                         className={style.responsUser}
+                          className={style.responsUser}
                           alt={'user'}
-                         
                       />
 
                   </div>
@@ -93,10 +93,10 @@ const StatsCard = (props) => {
                       <div className={style.stats_code_percentage}>ПВЗ: {percent}%</div>
                       <div className={style.stats_creativity}>Креативность: {creativity}/10</div>
                       <div>Английский: {english} / 10</div> 
-                      <div className={style.stats_total}>Итого: {setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10)}
+                      <div className={style.stats_total}>Итого: {total} <sup>/100</sup>
                     
                          <Image
-                          src={setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10) < 50?'/delete.png':'/mark.png'}
+                          src={total < 50?'/delete.png':'/mark.png'}
                           width={30}
                           height={30}
                           alt='mark'
