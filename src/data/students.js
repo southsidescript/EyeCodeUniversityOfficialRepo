@@ -1,4 +1,5 @@
 // Данные про учеников 
+
 export let result_data = [
     {   id:1,
         name:'Тимофей Столяров',
@@ -6,7 +7,7 @@ export let result_data = [
         creativity:7,
         percent:70,
         status:true,
-        english:6
+        english:6 
     },
     {
         id:2,

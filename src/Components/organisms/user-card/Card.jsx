@@ -6,19 +6,14 @@ import {ThemeContext} from "@/Context/Context";
 import {useContext} from "react";
 
 
-const Card = ({name,image,status,codeQuantity,percentage,creativity,english}) => {
+const Card = ({name,status,id}) => {
 
      const {setActiveWindow,activeWindow,userData,setUserData} = useContext(ThemeContext);
-     function showStats(){
-     setActiveWindow(!activeWindow);
-         setUserData({
-             name:name,
-             codeQuantity:codeQuantity,
-             percentage:percentage,
-             creativity:creativity,
-             english:english
-         })
 
+     function showStats(){
+        setActiveWindow(!activeWindow);
+        console.log(id)
+        setUserData(id)
      }
 
     return(
