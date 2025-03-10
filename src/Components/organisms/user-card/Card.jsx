@@ -1,6 +1,6 @@
+'use client'
 import styles from '@/styles/global.module.scss';
 import Image from "next/image";
-import StatsCard from '../stats-card/stats';
 import '@/styles/global.css'
 import {ThemeContext} from "@/Context/Context";
 import {useContext} from "react";
@@ -8,11 +8,10 @@ import {useContext} from "react";
 
 const Card = ({name,status,id}) => {
 
-     const {setActiveWindow,activeWindow,userData,setUserData} = useContext(ThemeContext);
+     const {setActiveWindow,activeWindow,setUserData} = useContext(ThemeContext);
 
      function showStats(){
         setActiveWindow(!activeWindow);
-        console.log(id)
         setUserData(id)
      }
 

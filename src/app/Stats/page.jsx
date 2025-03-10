@@ -1,17 +1,13 @@
-'use client';
 import style from '../../styles/global.module.scss';
 import Card from "../../Components/organisms/user-card/Card";
 import { result_data } from '@/data/students'
-import StatsCard from "@/Components/organisms/stats-card/stats";
-import {ThemeContext} from "../../Context/Context";
-import  { useContext } from "react";
+import StatsCardContainer from '@/Components/organisms/statsCardContainer/statsCardContainer';
+
 import Header from '@/Components/organisms/header/Header';
 
 
  const  Stats = () => {
 
-  const { activeWindow,userData} = useContext(ThemeContext);
- 
 
 
     return(
@@ -20,7 +16,7 @@ import Header from '@/Components/organisms/header/Header';
             <Header/>
                 
         
-                {activeWindow? <StatsCard />:''}
+                <StatsCardContainer/>
                 
                 <div className={style.stats_title}>Результаты недели</div>
                
