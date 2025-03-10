@@ -20,12 +20,13 @@ import Header from '@/Components/organisms/header/Header';
             <Header/>
                 
         
-                {activeWindow?<StatsCard />:''}
+                {activeWindow? <StatsCard />:''}
                 
                 <div className={style.stats_title}>Результаты недели</div>
-                
-                <div className={style.stats_table}>
                
+                    
+                <div className={style.stats_table}>
+                 
                  {result_data.map( n => {
                         return <li key={n.id}>
                             <Card {...n} />

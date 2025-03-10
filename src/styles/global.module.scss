@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Doto:wght@100..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
@@ -11,13 +10,13 @@
   height: 100vh;
   background: linear-gradient(120deg,black, #190f2a);
   display: flex;
-  
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 25px;
   background-attachment: fixed;
   font-family: "Play", sans-serif;
+
   &_total{
     display: flex;
     justify-content: center;
@@ -26,33 +25,24 @@
   }
 
   &_title{
-    font-size: 5rem;
+    font-size: 3rem;
     font-weight: 600;
     color: transparent;
     background-clip: text;
     // background-image: linear-gradient(120deg,purple,orange,white);
-    background-image: linear-gradient(150deg,black,white);
+    background-image: linear-gradient(150deg,rgb(85, 85, 85),white);
     font-family: Arial;
+
+  
   }
 
   &_name{
     font-size: 24px;
     font-weight: bold;
-
-
   }
   &_card{
-
-    background-image: radial-gradient(
-                    at 88% 40%,
-                    hsla(240, 15%, 9%, 1) 0px,
-                    transparent 85%
-    ),
-    radial-gradient(at 49% 30%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
-    radial-gradient(at 14% 26%, hsla(240, 15%, 9%, 1) 0px, transparent 85%),
-    radial-gradient(at 0% 64%, hsla(263, 93%, 56%, 1) 0px, transparent 85%),
-    radial-gradient(at 41% 94%, hsla(284, 100%, 84%, 1) 0px, transparent 85%),
-    radial-gradient(at 100% 99%, hsla(306, 100%, 57%, 1) 0px, transparent 85%);
+   
+    background: rgba(0, 0, 0, 0.205);
     text-align: center;
     transform-style:preserve-3d ;
     position: fixed;
@@ -61,7 +51,7 @@
     justify-content: center;
     align-items: center;
     animation: stats 1s 1;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(40px);
     z-index: 1000;
     left: calc(50% - 30%);
     top: calc(50% - 40%);
@@ -69,40 +59,38 @@
     height: 80%;
     padding:5%;
     border-radius: 10px;
-    box-shadow: 0px 0px 0px white;
+  
    
 
     &_content{
       display: flex;
        flex-direction: column;
       gap: 20px;
-      
+
     }
 
     
   }
-
   
+
     &_table{
       animation: table 3s 1;
       width: 30vw;
-  
-      border-top: 2px solid rgb(233, 233, 233);
-      border-radius: 35px;
-      padding: 50px 0px 50px 0px;
+      border-radius: 35px 35px 0 0 ;
+      padding:40px;
       height: 100vh;
       display: flex;
       flex-direction: column;
-       overflow-y:scroll ;
+      overflow-y:scroll ;
       overflow-x: hidden;
       justify-content: space-evenly;
       gap: 15px;
       align-items: center;  
-      
-
+    
       &::-webkit-scrollbar {
         display: none; /* Прячет скроллбар */
       }
+      
     }
 
 }
@@ -111,7 +99,7 @@
   border-radius: 10px;
   width: 500px;
   height: 80px;
-  border: 1px solid rgb(0, 0, 99);
+  border: 1px solid rgb(0, 0, 77);
   backdrop-filter: blur(10px);
   display: flex;
   transition: all .1s linear;
@@ -153,11 +141,16 @@
     gap: 10px;
     font-family: monospace;
     font-size: 0.7rem;
+    background: white;
+    border-radius: 20px;
+    padding: 10px;
+    text-align: center;
+    color: black;
   }
 
   &_status_active {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: green;
     animation: status 2s infinite linear;
@@ -165,8 +158,8 @@
   }
 
   &_status_inactive {
-    width: 5px;
-    height: 5px;
+    width: 8px;
+    height: 8px;
     border-radius: 50%;
     background-color: red;
     animation: status 2s infinite linear;
@@ -176,7 +169,7 @@
 
   &:hover {
     // transform: translateX(15px);
-    box-shadow: 0px 0px 10px blue;
+    box-shadow: 0px 0px 10px rgb(0, 0, 255);
     cursor: pointer;
   }
 
@@ -386,6 +379,11 @@ z-index: 1000;
   flex-direction: column;
   justify-content: space-between;
   background-color: black;
+  z-index: 2;
+  border-radius: 10px;
+   width: 600px;
+   padding: 20px;
+   height: 150px;
   & p{
     font-family: Arial;
     font-weight: 600;
@@ -424,13 +422,6 @@ z-index: 1000;
 
   }
    
-
-
-  z-index: 2;
- border-radius: 10px;
-  width: 600px;
-  padding: 20px;
-  height: 150px;
 }
 
 &_details{
@@ -554,8 +545,21 @@ z-index: 1000;
 @media screen and (max-width: 1575px){
   .stats_table{
     width: 40vw;
-    
   }
+  
+
+
+}
+
+@media screen and (max-width: 1250px){
+  .stats_table{
+    width: 50vw;
+  }
+  .card{
+    width: 45vw;
+  }
+  
+
 
 }
 
@@ -566,21 +570,23 @@ z-index: 1000;
     height: 90vh  ;
     left: calc(50% - 45vw);
     top: calc(50% - 45vh);
+    flex-direction: column;
   }
 
   .stats_table{
-    width: 100vw;
+    width: 90vw;
     
   }
 
   .stats_title{
     width: 100%;
-    font-size: 4rem;
+    font-size: 3rem;
     text-align: center;
   }
 
   .card{
     height: 9vh;
+    width: 80vw;
   }
 
   
@@ -589,6 +595,7 @@ z-index: 1000;
 @media screen and (max-width: 700px) {
   .stats_table{
     box-shadow: 0px -5px 100px rgb(0, 0, 154);
+    width: 100vw;
   }
 
       .stats_card{
@@ -615,9 +622,7 @@ z-index: 1000;
      }
    }
 
-   .stats_card{
-     height: 80vh;
-   }
+ 
 
   .stats_card_content{
     font-size: 14px;
@@ -697,6 +702,8 @@ z-index: 1000;
 
   .stats_card{
     height: 95vh;
+    width: 100vw;
+    left: calc(50% - 50vw);
   }
 }
 
@@ -718,7 +725,7 @@ z-index: 1000;
 
     &_card{
 
-    justify-content: space-between;
+    justify-content: space-evenly;
 
 
       &_content{
@@ -729,6 +736,21 @@ z-index: 1000;
 
     &_card{
       height: 95vh;
+    }
+   }
+
+   .card{
+ 
+
+    &_status{
+      gap: 5px;
+      padding: 8px;
+    }
+
+    &_btn{
+      width: 45px;
+      padding: 0;
+      
     }
    }
 

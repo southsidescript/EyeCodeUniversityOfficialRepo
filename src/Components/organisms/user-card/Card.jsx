@@ -19,7 +19,7 @@ const Card = ({name,status,id}) => {
     return(
         <>
          <div  onClick={showStats} className={styles.card} >
-
+        
               <Image
                   width={25}
                   height={25}
