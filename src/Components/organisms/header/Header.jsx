@@ -32,12 +32,14 @@ const Header = () => {
                    </nav>
                    
                    <button>
+                    <Link href={'https://github.com/southsidescript'}> 
                     <Image
                      src={'/github-mark-white.png'}
                      width={30}
                      height={30}
                      alt='git-hub'
                     />
+                    </Link>
                    </button>
                 </div>
                 </header>
