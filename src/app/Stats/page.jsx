@@ -3,7 +3,6 @@ import Card from "../../Components/organisms/user-card/Card";
 import { result_data } from '@/data/students'
 import StatsCardContainer from '@/Components/organisms/statsCardContainer/statsCardContainer';
 
-import Header from '@/Components/organisms/header/Header';
 
 
  const  Stats = () => {
@@ -11,9 +10,9 @@ import Header from '@/Components/organisms/header/Header';
 
 
     return(
-            <main className={style.stats}>
+            <section className={style.stats}>
 
-            <Header/>
+        
                 
         
                 <StatsCardContainer/>
@@ -21,18 +20,20 @@ import Header from '@/Components/organisms/header/Header';
                 <div className={style.stats_title}>Результаты недели</div>
                
                     
-                <div className={style.stats_table}>
-                 
-                 {result_data.map( n => {
-                        return <li key={n.id}>
-                            <Card {...n} />
-                        </li>
-                    })}
-            
+                <table className={style.stats_table}>
+                 <thead>
+                     <tr><td>user</td><td>Ф.И.О</td><td>Прогресс</td><td>Статус</td><td>Результаты</td></tr>
+                 </thead>     
+                 <tbody>
+                    {result_data.map( n => {
+                            return <Card  key={n.id} {...n} />
+                         
+                        })}
+                 </tbody>
                   
-                </div>
+                </table>
 
-            </main>
+            </section>
         
     )
 

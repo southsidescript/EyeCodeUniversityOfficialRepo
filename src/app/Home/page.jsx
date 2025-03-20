@@ -1,10 +1,9 @@
 import React from "react";
 import style from '../../styles/global.module.scss'
-import Image from "next/image";
 import DesignStation from "@/Components/organisms/design-station/DesignStation";
 import Link from "next/link";
-import '../globals.css';
-import Header from '@/Components/organisms/header/Header'
+import '@/app/global.css'
+
 const Home = ()=> {
    
 

@@ -1,21 +1,38 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
 
+
+@font-face {
+  font-family: 'GeistVF';
+  src:  url('../app/fonts/GeistVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistVFMono';
+  src:  url('../app/fonts/GeistMonoVF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GeistMonoBlack';
+  src:  url('../app/fonts/GeistMono-Black.otf') format('otf');
+ 
+}
 .stats{
   color: white;
-  width: 100vw;
+  width: 100%;
   height: 100vh;
-  background: linear-gradient(120deg,black, #190f2a);
+  background: black;
   display: flex;
-  align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 25px;
-  background-attachment: fixed;
-  font-family: "Play", sans-serif;
+  align-items: center;
+   
+
 
   &_total{
     display: flex;
@@ -26,14 +43,17 @@
 
   &_title{
     font-size: 3rem;
+    align-content: center;
+    align-self: flex-start;
     font-weight: 600;
     color: transparent;
     background-clip: text;
-    // background-image: linear-gradient(120deg,purple,orange,white);
+   
     background-image: linear-gradient(150deg,rgb(85, 85, 85),white);
-    font-family: Arial;
-
-  
+    font-family: 'GeistMono';
+    font-weight: bold;
+    height: 100px;
+    width: max-content;   
   }
 
   &_name{
@@ -75,39 +95,63 @@
 
     &_table{
       animation: table 3s 1;
-      width: 30vw;
+      width: 80%;
       border-radius: 35px 35px 0 0 ;
       padding:40px;
       height: 100vh;
       display: flex;
       flex-direction: column;
-      overflow-y:scroll ;
-      overflow-x: hidden;
-      justify-content: space-evenly;
-      gap: 15px;
-      align-items: center;  
-    
-      &::-webkit-scrollbar {
-        display: none; /* Прячет скроллбар */
+
+
+      overflow: hidden;
+      & thead{
+        display: flex;
+        width: 100%;
+        justify-content: center;
+         height: max-content;
+       
+        & tr{
+          width: 80%;
+          height: 50px;
+          border: 1px solid rgb(0, 1, 48);
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          border-radius: 15px 15px 0px 0px;
+          font-family: 'GeistVF';
+
+        
+        }
       }
       
+      & tbody{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow-y:scroll;
+        align-items: center;
+        &::-webkit-scrollbar {
+          display: none; /* Прячет скроллбар */
+        }
+       
+      }
     }
 
 }
 
-.card {
-  border-radius: 10px;
-  width: 500px;
+.card{
+ 
+  width: 80%;
   height: 80px;
-  border: 1px solid rgb(0, 0, 77);
+  border: 1px solid rgb(0, 1, 48);
   backdrop-filter: blur(10px);
   display: flex;
   transition: all .1s linear;
   justify-content: space-evenly;
   align-items: center;
   color: white;
-  font-family: "Play", sans-serif;
-  
+  font-family: "Geist", sans-serif;
+   
 
   &_name {
     width: 150px;
@@ -169,7 +213,7 @@
 
   &:hover {
     // transform: translateX(15px);
-    box-shadow: 0px 0px 10px rgb(0, 0, 255);
+    border: 1px solid rgb(63, 63, 63);
     cursor: pointer;
   }
 
@@ -187,7 +231,6 @@
   justify-content: center;
   align-items: center;
 }
-
 
 
 .close img{
@@ -336,103 +379,46 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
-  overflow: hidden;
-  // position: fixed;
-  // top: 0;
-  // left: 0;
+  height: 70px;
+  width: 100%;
  
-
-  width: 90vw;
-  margin: 0 auto;
-
+       &_info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+       gap: 40px;
+       }  
 
   &_logo{
+
     display: flex;
     align-items: center;
-    font-family: "Poppins", serif;
+    font-family: 'GeistVF';
     font-weight: 500;
     justify-content: center;
-    font-size:1.1rem;
- 
+    font-size:1rem;
+    height: 100%;
     & img{
       filter: drop-shadow(0px 0px 2px black);
     }
 
   }
-}
-
-.payment{
-width: 100vw;
-min-height: 100vh;
-display: flex;
-flex-direction: column;
-align-items: center;
-z-index: 1000;
-
-&_heading{
-  font-size: 3rem;
-  z-index: 1000 !important;
-}
-&_card{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: black;
-  z-index: 2;
-  border-radius: 10px;
-   width: 600px;
-   padding: 20px;
-   height: 150px;
-  & p{
-    font-family: Arial;
-    font-weight: 600;
-    font-size: 1.1rem;
-     color: white;
+  &_nav{
+      display: flex;
+      height: 100%;
+      width: max-content;
+    & ul{
+       height: 100%;   
+       width: 100%;
+       gap: 50px; 
+       font-size: 0.8rem;
+       display: flex;
+       justify-content:space-between;
+       font-family: 'GeistVF';
+       align-items: center;
      
-  }
-
-  &_data{
-   
-    font-family: "Space Grotesk", serif;
-    font-size: 0.9rem;
-    width: 100%;
-    height: 80%;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    color: white;
-     
-    &_currency{
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.8rem;
     }
-    &_btn{
-      background-color: rgb(43, 15, 145);
-      color: white;
-      outline: none;
-      border: none;
-       width: 100px;
-       border-radius: 5px;
-       font-weight: bold;
-       height: 40px;
-    }
-
-
   }
-   
-}
-
-&_details{
-  // background-color: rgb(223, 223, 223);
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  justify-content: space-evenly;
-  flex-direction: column;
-  min-height: 50vh;
-}
 }
 
 
@@ -542,30 +528,11 @@ z-index: 1000;
 
 
 
-@media screen and (max-width: 1575px){
-  .stats_table{
-    width: 40vw;
-  }
-  
 
 
-}
-
-@media screen and (max-width: 1250px){
-  .stats_table{
-    width: 50vw;
-  }
-  .card{
-    width: 45vw;
-  }
-  
-
-
-}
 
 @media screen and (max-width: 975px){
   .stats_card{
-
     width: 90vw;
     height: 90vh  ;
     left: calc(50% - 45vw);
@@ -573,20 +540,31 @@ z-index: 1000;
     flex-direction: column;
   }
 
-  .stats_table{
-    width: 90vw;
-    
-  }
-
-  .stats_title{
+.stats{
+  &_title{
     width: 100%;
     font-size: 3rem;
     text-align: center;
   }
 
+  &_table{
+   
+    & thead{
+      
+      & tr{
+        width: 100%;
+      }
+    }
+     
+  
+  }
+
+}
+
+   
   .card{
     height: 9vh;
-    width: 80vw;
+    width: 100%;
   }
 
   
@@ -605,7 +583,11 @@ z-index: 1000;
         left: calc(50% - 45vw);
         top: calc(50% - 45vh);
       }
-
+ .header{ 
+  &_nav{
+    display: none;
+   }
+ }
 }
 
 @media screen and (max-width: 600px){
@@ -636,12 +618,7 @@ z-index: 1000;
 
 @media screen and (max-width: 500px){
    
-.payment{
-  &_card{
-    width: 90vw;
-    height: 20vh;
-  }
-}
+
 
 .header{
    
@@ -660,13 +637,14 @@ z-index: 1000;
       height: 62px;
     }
    }
+   
 }
 
 .container{
   width: 90vw;
 }
 
-  .responsUser{
+.responsUser{
     width: 140px; 
     height: 140px;
 }
@@ -677,25 +655,39 @@ z-index: 1000;
 
   .stats_table{
     box-shadow: 0px -5px 100px rgb(0, 0, 154);
-
+    
+    & thead{
+  
+      & tr{
+        padding: 5px;
+        justify-content: space-between;
+        font-size: 0.7rem;
+             
+      }
+    }
   }
    
   .card{
-    width: 90vw;
+    width: 100%;
      
 
 
     &_name{
-      font-size: 0.8rem;
+      font-size: 0.7rem;
+      width: 100px;
     }
 
     &_btn{
-      width: 4rem;
-      height: 2rem;
+      padding: 0;
+      width: 3rem;
+      height: 1.5rem;
       font-size: 0.6rem;
     }
 
     &_status{
+      gap: 5px;
+      padding: 5px 3px;
+    
       font-size: 0.5rem;
     }
   }

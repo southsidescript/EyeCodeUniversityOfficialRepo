@@ -1,30 +1,47 @@
 import style from '@/styles/global.module.scss'
 import Image from 'next/image';
+import Link from 'next/link';
+
+
 const Header = () => {
 
     return(
-        <header className={style.header}>   
+       
+         <header className={style.header}>   
+       
                    <div className={style.header_logo}>
                    <Image
                     src={'/eyelogov6.png'}
-                    width={110}
-                    height={82}
+                    width={100}
+                    height={75}
                     alt='logo'
+                    priority={true}
                     />
                     EyeCode University
                    </div>
 
-                   <div className={style.header_menu}>
-                    <Image
-                    src={'/mobile-menu.png'}
-                    width={32}
-                    height={32}   
-                    alt='mobile-menu'
-                    />
-                   </div>
 
-                    
+
+                <div className={style.header_info}>
+                   <nav className={style.header_nav}>
+                        <ul>
+                            <li><Link href="">О нас</Link></li>
+                            <li><Link href="">Документы</Link></li>
+                            <li><Link href="">Контакты</Link></li>
+                        </ul>
+                   </nav>
+                   
+                   <button>
+                    <Image
+                     src={'/github-mark-white.png'}
+                     width={30}
+                     height={30}
+                     alt='git-hub'
+                    />
+                   </button>
+                </div>
                 </header>
+            
     )
 }
 

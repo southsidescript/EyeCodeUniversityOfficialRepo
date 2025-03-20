@@ -3,51 +3,24 @@ import { fidnUser,setTotalCalc } from '@/utils/helpers';
 import { useContext } from 'react';
 import { ThemeContext } from '@/Context/Context';
 import style from '@/styles/global.module.scss'
-import { RadarChart, PolarGrid, PolarAngleAxis, PolarRadiusAxis, Radar, Legend } from 'recharts';
+import Chart from '@/Components/organisms/Charts/Radar/Chart';
 import Image from 'next/image';
+
 const StatsCard = () => {
-    
+     
+
+     
     const {setActiveWindow,userData,activeWindow} = useContext(ThemeContext);
-  
-    
+
     const {name,codeQuantity,percent,creativity,english} = fidnUser(userData,result_data);
 
     const total = setTotalCalc(creativity * 10,codeQuantity * 10,percent,english * 10);
    
    
 
-    const data = [
-        {
-            "subject": "Code Quality",
-            "A": codeQuantity * 10,
-            "fullMark": 100
-        },
-        {
-            "subject": "Percentage of completion",
-            "A": percent,
-            "fullMark": 100
-        },
-        {
-            "subject": "English",
-            "A":english * 10,
-            "fullMark": 100
-        },
-        {
-            "subject": "Creativity",
-            "A": creativity * 10,
-            "fullMark": 100
-        },
-        {
-            "subject": "Total",
-            "A":total ,
-            "fullMark": 100
-        },
-
-    ]
-
-
 
     return(
+        
         <div className={style.stats_card}>
 
         <div onClick={() => {
@@ -76,13 +49,14 @@ const StatsCard = () => {
 
 
 
-                  <RadarChart  className='chart-text'    outerRadius={90} width={330} height={220} data={data}>
-                          <PolarGrid />
-                          <PolarAngleAxis dataKey="subject" />
-                          <PolarRadiusAxis angle={0} domain={[0, 100]} />
-                          <Radar name={name} dataKey="A"  stroke="#8884d8" fill="#8884d8" fillOpacity={0.5} />
-                          <Legend />
-                  </RadarChart>
+         <Chart 
+           name={name}
+           creativity={creativity}
+           english={english}
+           codeQuantity={codeQuantity}
+           total={total}
+           percent={percent}
+         />
 
        
 

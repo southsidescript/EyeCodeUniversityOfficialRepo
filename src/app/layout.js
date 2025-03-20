@@ -1,5 +1,5 @@
 import localFont from "next/font/local";
-import "./globals.css";
+import "@/app/global.css";
 import SendContextApi from "@/Context/Context";
 import { SpeedInsights } from "@vercel/speed-insights/next"
 

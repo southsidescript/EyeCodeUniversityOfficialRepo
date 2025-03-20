@@ -1,6 +1,5 @@
 'use client';
 import style from '@/styles/global.module.scss'
-import { Spin } from 'antd';
 import { useState } from "react";
 import { useEffect } from 'react';
 import { useRouter } from 'next/navigation';
@@ -11,44 +10,21 @@ const Loading = () => {
 
     const [greeting,setGreeting] = useState('Добро пожаловать в EyeCode University')
 
-    const [load,setLoad] = useState(true)
-    
     const router = useRouter();
 
     useEffect(()=>{
 
-         console.log(greeting)
-
-       const timer =  setTimeout(()=>{
-            setLoad(false);
-            clearTimeout(timer)
-
-           let greetingTimeOut = setTimeout(()=>{
-               router.push('/Stats');
-               clearTimeout(greetingTimeOut);
-           },4000)
-
-        },2000);
-
-        return ()=>{
-
-        }
-
-
+      
+       setTimeout(()=>{
+          router.push('/Stats')
+       },5000)
+      
     },[]);
-
-
 
     return(<div className={style.loading} >
 
-         {load?<Spin />:''}
-
-        {!load?<div className={style.greeting}>{greeting}</div> :''}
-
-
-
-
-
+         <div className={style.greeting}>{greeting}</div>
+       
     </div>)
   
 

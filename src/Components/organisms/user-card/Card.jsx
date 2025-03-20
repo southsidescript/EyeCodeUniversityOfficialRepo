@@ -1,12 +1,12 @@
 'use client'
 import styles from '@/styles/global.module.scss';
 import Image from "next/image";
-import '@/styles/global.css'
+
 import {ThemeContext} from "@/Context/Context";
 import {useContext} from "react";
+import BasicGauges from '../Charts/Gauge/Gauge';
 
-
-const Card = ({name,status,id}) => {
+const Card = ({name,status,id,percent}) => {
 
      const {setActiveWindow,activeWindow,setUserData} = useContext(ThemeContext);
 
@@ -16,33 +16,37 @@ const Card = ({name,status,id}) => {
      }
 
     return(
-        <>
-         <div  onClick={showStats} className={styles.card} >
-        
-              <Image
+     
+         <tr  onClick={showStats} className={styles.card} >
+              <td>  
+                 <Image
                   width={25}
                   height={25}
                   src={'/user.png'}
                   alt={name}
               />
+              
+              </td>
+            
 
-             <div className={styles.card_name}>{name}</div>
-             <div className={styles.card_status}>{status? 'Выполнено':'Провалено'} <div className={status ? styles.card_status_active : styles.card_status_inactive}></div>  </div>
+        
+              <td><div className={styles.card_name}>{name}</div></td>
+      
+              <td><BasicGauges percent={percent}/></td>
 
-             <div>
+              <td>
+                <div className={styles.card_status}>{status? 'Выполнено':'Провалено'} <div className={status ? styles.card_status_active : styles.card_status_inactive}></div>  </div>
+              </td>
+
+             <td>
                  <button type="button" className={styles.card_btn}>
                    Info
                  </button>
-
-             </div>
-
-
-         </div>
+             </td>
 
 
+         </tr>
 
-
-        </>
 
     )
 }
