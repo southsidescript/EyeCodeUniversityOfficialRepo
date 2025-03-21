@@ -12,7 +12,7 @@ export let result_data = [
     {
         id:2,
         name:'Вадим Болотников',
-        codeQuantity10,
+        codeQuantity:10,
         creativity:8,
         percent:78,
         status:true,
