@@ -105,16 +105,16 @@ export let result_data = [
         codeQuantity:10,
         creativity:6,
         percent:89,
-        status:false,
+        status:true,
         english:7
     },
     {
         id:13,
         name:'Рауль',
-        codeQuantity:0,
-        creativity:0,
-        percent:0,
-        status:false,
+        codeQuantity:8,
+        creativity:8,
+        percent:50,
+        status:true,
         english:6
     },
     {
