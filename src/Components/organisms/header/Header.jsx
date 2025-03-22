@@ -26,7 +26,7 @@ const Header = () => {
                    <nav className={style.header_nav}>
                         <ul>
                             <li><Link href="">О нас</Link></li>
-                            <li><Link href="">Документы</Link></li>
+                            <li><Link href="/Docs">Документы</Link></li>
                             <li><Link href="">Контакты</Link></li>
                         </ul>
                    </nav>
