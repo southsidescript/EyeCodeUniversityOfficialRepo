@@ -179,6 +179,15 @@ export let result_data = [
         status:false,
         english:5
     },
+    {  
+        id:19,
+        name:'Георгий',
+        codeQuantity:7,
+        creativity:7,
+        percent:69,
+        status:true,
+        english:5
+    },
   
 
 ]
