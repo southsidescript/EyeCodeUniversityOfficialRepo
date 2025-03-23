@@ -10,7 +10,7 @@ const Docs = () => {
             downloadUrl:"/docs/info.docx",
           },
           {
-            title:"Ревизиты",
+            title:"Реквизиты",
             fileType:"DOCX",
             fileSize :"0.342 MB",
             downloadUrl:"/docs/payment.docx",
