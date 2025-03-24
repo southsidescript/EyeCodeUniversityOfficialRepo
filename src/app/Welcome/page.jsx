@@ -17,11 +17,11 @@ const Loading = () => {
       
        setTimeout(()=>{
           router.push('/Stats')
-       },5000)
+       },4000)
       
     },[]);
 
-    return(<div className={style.loading} >
+    return(<div className={style.welcome} >
 
          <div className={style.greeting}>{greeting}</div>
        

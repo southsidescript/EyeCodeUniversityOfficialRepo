@@ -1,10 +1,10 @@
-import Loading from "@/Components/pages/Loading/Loading";
+import { redirect } from "next/dist/server/api-utils";
+
+
 
 const HomePage = () => {
-
-  return(<>
-    <Loading/>
-  </>)
+redirect("/Welcome");
+  return null;
 }
 
 export default HomePage;

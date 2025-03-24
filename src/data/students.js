@@ -180,7 +180,7 @@ export let result_data = [
         english:5
     },
     {  
-        id:19,
+        id:21,
         name:'Георгий',
         codeQuantity:7,
         creativity:7,

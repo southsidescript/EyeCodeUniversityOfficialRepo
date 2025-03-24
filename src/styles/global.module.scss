@@ -221,9 +221,9 @@
 
 }
 
-.loading{
+.welcome{
   height: 100vh;
-  background:linear-gradient(120deg,rgb(0, 0, 80),black);
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -246,8 +246,8 @@
 
 .greeting{
   color: whitesmoke;
-  font-family: 'Play';
-  animation: greeting 5s 1 forwards;
+  font-family: 'GeistVF';
+  animation: greeting 4s 1 forwards;
 }
 
 .home{
