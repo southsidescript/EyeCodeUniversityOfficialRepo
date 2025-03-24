@@ -1,9 +1,11 @@
-import { redirect } from "next/dist/server/api-utils";
+import { redirect } from "next/navigation";
 
 
 
 const HomePage = () => {
 redirect("/Welcome");
+
+
   return <></>;
 }
 
