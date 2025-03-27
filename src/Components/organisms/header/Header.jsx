@@ -8,7 +8,7 @@ const Header = () => {
     return(
        
          <header className={style.header}>   
-       
+         <Link href={'/Home'}>
                    <div className={style.header_logo}>
                    <Image
                     src={'/eyelogov6.png'}
@@ -19,7 +19,7 @@ const Header = () => {
                     />
                     EyeCode University
                    </div>
-
+                   </Link>
 
 
                 <div className={style.header_info}>

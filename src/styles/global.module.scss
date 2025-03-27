@@ -1,15 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap');
-
-
 @font-face {
   font-family: 'GeistVF';
   src:  url('../app/fonts/GeistVF.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
-
 
 
 @font-face {
@@ -223,10 +217,11 @@
 
 .welcome{
   height: 100vh;
-  
+
   display: flex;
   justify-content: center;
   align-items: center;
+
 }
 
 .close img{
@@ -247,7 +242,8 @@
 .greeting{
   color: whitesmoke;
   font-family: 'GeistVF';
-  animation: greeting 4s 1 forwards;
+  // animation: greeting 4s 1 forwards;
+  font-size: 4rem;
 }
 
 .home{
@@ -256,7 +252,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   position: relative;
   &_heading{
     height: 100px;
@@ -277,10 +273,20 @@
 
     }
   }
+  
+  &_title{
+    width: 70%;
+    font-size: 1.1rem;
 
+    z-index: 1;
+    text-align: center;
+    font-family: 'GeistVF';
+    color: rgb(255, 255, 255);
+    
+  }
 
   &_nav{
-    position: fixed;
+
     bottom: 5vh;
     color: white;
     font-family: Arial;
@@ -288,7 +294,7 @@
     width: 50vw;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
     height: 20vh;
 
     & div{
@@ -317,43 +323,7 @@
        z-index: 1;
 
     }
-    &_firstelement{
-      position: relative;
-      &::after{
-
-        position: absolute;
-        left: 0px;
-
-        top: 50%;
-        content: '';
-        width: 50px;
-        border-radius: 50%;
-        box-shadow: 0px 0px 5px 1px #0000ff;
-        height: 1px;
-        background: #000094;
-        animation: beamtoright 5s infinite;
-        z-index: -1;
-      }
-    }
-    &_lastelement{
-
-      position: relative;
-      &::after{
-
-        position: absolute;
-        right: 0px;
-
-        top: 50%;
-        content: '';
-        width: 50px;
-        border-radius: 50%;
-        box-shadow: 0px 0px 5px 1px #0000ff;
-        height: 1px;
-        background: #000094;
-        animation: beamtoleft 5s infinite;
-         z-index: -1;
-      }
-    }
+  
   }
 
 
@@ -439,27 +409,6 @@
    }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@keyframes beamtoleft{
-  0%{transform: translateX(0px);}
-  100%{transform: translateX( -25vw);}
-}
-@keyframes beamtoright{
-  0%{transform: translateX(0px);}
-  100%{transform: translateX( 25vw);}
-}
 
 
 @keyframes morph {
