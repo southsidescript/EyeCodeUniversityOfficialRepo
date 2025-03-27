@@ -569,7 +569,15 @@
 
 @media screen and (max-width: 600px){
  
-
+  .home{
+    &_heading{
+      font-size: 4rem;
+    }
+    &_title{
+      width: 100%;
+      font-size: 0.8rem;
+    }
+  }
   
   #logo{
     width: 10px;
