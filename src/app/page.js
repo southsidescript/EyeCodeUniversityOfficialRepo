@@ -3,7 +3,7 @@ import { redirect } from "next/navigation";
 
 
 const HomePage = () => {
-redirect("/Stats");
+redirect("/Home");
 
 
   return <></>;
