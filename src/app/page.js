@@ -6,7 +6,7 @@ const HomePage = () => {
 redirect("/Stats");
 
 
-  return <></>;
+  return null;
 }
 
 export default HomePage;
