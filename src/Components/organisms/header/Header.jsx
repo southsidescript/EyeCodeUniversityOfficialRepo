@@ -8,7 +8,7 @@ const Header = () => {
     return(
        
          <header className={style.header}>   
-         <Link href={'/Home'}>
+         <Link href={'/Stats'}>
                    <div className={style.header_logo}>
                    <Image
                     src={'/eyelogov6.png'}
