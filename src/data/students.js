@@ -50,7 +50,7 @@ export let result_data = [
         name:'Радионов Михаил',
         codeQuantity:10,
         creativity:7,
-        percent:0,
+        percent:72,
         status:true,
         english:3
     },
