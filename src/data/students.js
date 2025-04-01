@@ -114,7 +114,7 @@ export let result_data = [
         codeQuantity:0,
         creativity:0,
         percent:0,
-        status:true,
+        status:false,
         english:9
     },
     {
