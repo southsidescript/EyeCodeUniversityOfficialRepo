@@ -87,7 +87,7 @@ export let result_data = [
         codeQuantity:5,
         creativity:5,
         percent:50,
-        status:false,
+        status:true,
         english:9
     },
     {
@@ -140,7 +140,7 @@ export let result_data = [
         name:'Александр Штейнле',
         codeQuantity:0,
         creativity:0,
-        percent:80,
+        percent:45,
         status:false,
         english:6
     },  {  
