@@ -10,7 +10,8 @@ const DesignStation = () => {
     const des2 = {
         width:150,
         height:150,
-        animationDuration:12
+        animationDuration:12,
+        
     }
     const des3 = {
         width:350,

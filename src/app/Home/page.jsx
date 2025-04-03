@@ -24,23 +24,18 @@ return(
     </div>
     
         <nav className={style.home_nav}>
-            <Link href="/about">
-                <div className={style.home_nav_firstelement}>Модули</div>
-            </Link>
+          
 
             
             <button className={style.home_nav_button}>Начать обучение</button>
            
-            <Link href="/about">
-                <div className={style.home_nav_lastelement}>Контакты</div>
-            </Link>
-
+   
 
         </nav>
 
     </main>
 )
-
+       
 }
 
 
