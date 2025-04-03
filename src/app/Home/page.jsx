@@ -26,9 +26,9 @@ return(
         <nav className={style.home_nav}>
           
 
-            
+            <Link href={'https://wa.me/79283526584'}>
             <button className={style.home_nav_button}>Начать обучение</button>
-           
+            </Link>
    
 
         </nav>
