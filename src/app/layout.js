@@ -20,6 +20,21 @@ const geistMono = localFont({
 export const metadata = {
   title: "EyeCode University Stats",
   description: "Welcome to EyeCode University Stats",
+  other: {
+    "application/ld+json": JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "It Courses",
+      "name": "EyeCode university",
+      "url": "https://www.eyecodeuniversity.ru",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Russia",
+        "addressLocality": "Russia",
+        "addressCountry": "RU"
+      },
+      "telephone": "+7 928 352 65 84"
+    }),
+  },
     icons: {
       icon:'/eyeicondark.png',
     }
