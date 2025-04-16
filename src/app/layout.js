@@ -18,8 +18,8 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "EyeCode University Stats",
-  description: "Welcome to EyeCode University Stats",
+  title: "EyeCode University",
+  description: "EyeCode University — это университет нового поколения. Здесь нет потока. Есть ты, твой наставник и результат. Мы обучаем так, как хотели бы учиться сами.",
   other: {
     "application/ld+json": JSON.stringify({
       "@context": "https://schema.org",
