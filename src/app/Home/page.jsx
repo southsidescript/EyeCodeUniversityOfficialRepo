@@ -3,12 +3,12 @@ import style from '../../styles/global.module.scss'
 import DesignStation from "@/Components/organisms/design-station/DesignStation";
 import Link from "next/link";
 import '@/app/global.css'
-
+import Consult from "@/Components/sections/Consult/Consult";
 const Home = ()=> {
    
 
     
-return(
+return(<>
     <main className={style.home}>
      
         <div className={style.container}>
@@ -33,7 +33,12 @@ return(
 
         </nav>
 
+
+
     </main>
+   {/* <Consult/> */}
+    </>
+ 
 )
        
 }

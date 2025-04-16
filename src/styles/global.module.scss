@@ -229,12 +229,7 @@
   cursor: pointer;
 }
 
-.greeting{
-  color: whitesmoke;
-  font-family: 'GeistVF';
-  // animation: greeting 4s 1 forwards;
-  font-size: 4rem;
-}
+
 
 .home{
   background: black;
@@ -403,7 +398,61 @@
    }
 }
 
+.consult{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  & h2{
+    align-self: flex-start;
+    font-size: 2.5rem;
+    font-family:'GeistVF';
+  }
 
+  &_btn{
+    background: linear-gradient(120deg,white 0,1% ,blue);
+   
+    width: 150px;
+     border: none;
+    outline: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    height: 50px;
+    clip-path: polygon(10% 0, 100% 0, 100% 70%, 90% 100%, 0 100%, 0 30%);
+    border-radius: 5px;
+     z-index: 1;
+     position: absolute;
+     left: calc(41%);
+     bottom: calc(25%);
+    cursor: pointer;
+
+     &:after{
+      content: '';
+      width: 20px;
+      height: 50px;
+      background:white;
+      left: 0;
+      top: 0;
+      position: absolute;
+      filter: blur(10px);
+      animation: slide 5s infinite linear;
+     }
+
+  }
+
+  &_action{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: max-content;
+    height: max-content;
+ 
+  
+  }
+}
 
 @keyframes morph {
   0% {
@@ -472,17 +521,7 @@
   }
 }
 
-@keyframes greeting{
-  0%{
-    opacity: 0;
-  }
-  50%{
-    opacity: 1;
-  }
-  100%{
-    opacity: 0;
-  }
-}
+
 
 @keyframes status{
   0%{
