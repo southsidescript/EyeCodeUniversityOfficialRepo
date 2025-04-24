@@ -1,5 +1,6 @@
 import style from '@/styles/global.module.scss';
 import Doc from '@/Components/organisms/Doc/Doc';
+import Link from 'next/link';
 const Docs = () => {
 
     const data = [
@@ -27,6 +28,13 @@ return(
 
           <Doc {...data[0]} />
           <Doc {...data[1]} />
+          
+          <Link href={'/Docs/vocabulary'}>
+              <article className={style.docs_vocabulary}>
+                IT <br />
+                Vocabulary
+              </article>  
+            </Link>
 
      </div>
  

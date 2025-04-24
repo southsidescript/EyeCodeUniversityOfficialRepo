@@ -1,11 +1,15 @@
+'use client'
 import style from '@/styles/global.module.scss'
 import Image from 'next/image';
 import Link from 'next/link';
-
+import { useState } from 'react';
 
 const Header = () => {
+ 
+ const [isActive, setActive] = useState(false);
 
     return(
+        <>
        
          <header className={style.header}>   
          <Link href={'/Home'}>
@@ -43,10 +47,33 @@ const Header = () => {
                     />
                     </Link>
                    </button>
+
+                   <button onClick={()=>{
+                    setActive(!isActive);
+                   }} className={style.mobile}>
+                   </button>
                 </div>
-                </header>
+         </header>
+
+           {isActive?<header className={style.mobile_header}>
+                <nav className={style.mobile_header_nav}>
+
+                <ul onClick={()=>{
+                    setActive(false);
+                }}>
+                            <li><Link href="">О нас</Link></li>
+                            <li><Link href="/Docs">Документы</Link></li>
+                            <li><Link href="">Контакты</Link></li>
+                            <li><Link href="">События</Link></li>
+                            
+                </ul>
+                </nav>
             
-    )
+            </header>:''}
+            
+         </>
+         
+        )
 }
 
 export default Header;
