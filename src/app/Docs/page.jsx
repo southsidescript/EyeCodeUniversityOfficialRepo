@@ -21,6 +21,7 @@ const Docs = () => {
 return(
   <section className={style.docs}>
     <h1>Документы</h1>
+    <p className={style.docs_title}>Все необходимые материалы в одном портале</p>
      
      <div className={style.docs_container}>
 

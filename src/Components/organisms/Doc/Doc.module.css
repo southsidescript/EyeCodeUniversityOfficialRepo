@@ -2,8 +2,9 @@
   
   .card {
     position: relative;
+   
     background-color: #111111;
-    padding: 24px 50px;
+   padding: 15px 20px;
     border-radius: 15px;
     box-shadow: 0px 5px 10px  rgb(0, 32, 68);
     font-family: 'GeistVF';
@@ -12,6 +13,9 @@
   
   .content {
     position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
   }
   
   .header {
@@ -22,6 +26,7 @@
   
   .titleContainer {
     flex: 1;
+    
   }
   
   .title {
@@ -54,8 +59,8 @@
   
   .downloadButton {
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -80,8 +85,8 @@
   }
   
   .buttonIcon {
-    width: 24px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
     color: #00c3ff;
     filter: drop-shadow(0 0 3px rgba(0, 195, 255, 0.7));
     z-index: 1;
@@ -117,7 +122,7 @@
   
   .accentLine {
     position: absolute;
-    bottom: -24px;
+    bottom: -20%;
     left: 50%;
     transform: translateX(-50%);
     width: 40px;

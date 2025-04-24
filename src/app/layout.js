@@ -6,6 +6,7 @@ import Header from "@/Components/organisms/header/Header";
 import Container from "@/Components/organisms/Containers/container/Container";
 import ContainerWrapper from "@/Components/organisms/Containers/container-wrapper/ContainerWrapper";
 
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
@@ -36,7 +37,7 @@ export const metadata = {
     }),
   },
     icons: {
-      icon:'/eyeicondark.png',
+      icon:'/eyedark.jpg',
     }
 };
 
@@ -52,9 +53,9 @@ export default function RootLayout({ children }) {
              <Header/> 
           </Container>
         </ContainerWrapper> 
-        <Container>
+       
                                 {children}
-                                </Container>
+ 
         <SpeedInsights />
         </body>
         </html>

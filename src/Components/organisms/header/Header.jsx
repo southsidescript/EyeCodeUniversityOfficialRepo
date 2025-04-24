@@ -28,6 +28,8 @@ const Header = () => {
                             <li><Link href="">О нас</Link></li>
                             <li><Link href="/Docs">Документы</Link></li>
                             <li><Link href="">Контакты</Link></li>
+                            <li><Link href="">События</Link></li>
+                            
                         </ul>
                    </nav>
                    

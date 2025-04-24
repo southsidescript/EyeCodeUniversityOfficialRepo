@@ -4,6 +4,7 @@ import DesignStation from "@/Components/organisms/design-station/DesignStation";
 import Link from "next/link";
 import '@/app/global.css'
 import Consult from "@/Components/sections/Consult/Consult";
+import Faq from "@/Components/organisms/FAQ/Faq";
 const Home = ()=> {
    
 
@@ -36,7 +37,8 @@ return(<>
 
 
     </main>
-   {/* <Consult/> */}
+   <Consult/>
+   {/* <Faq/> */}
     </>
  
 )

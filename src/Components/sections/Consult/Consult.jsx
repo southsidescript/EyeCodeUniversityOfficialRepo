@@ -6,6 +6,9 @@ const Consult = () => {
     return (
         <div className={style.consult}>
             <h2>Не смогли еще определиться ?</h2>
+            <p className={style.consult_title}>
+                Напишите нам в WhatsApp и мы с вами свяжемся для проведения бесплатной консультации.  
+            </p>
 
             <div className={style.consult_action}>
             <Image 
