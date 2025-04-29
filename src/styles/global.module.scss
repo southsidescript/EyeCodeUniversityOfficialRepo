@@ -560,7 +560,23 @@ height: 30px;
   justify-content: space-between;
   overflow: hidden;
   padding: 0 100px;
+   
+  &_nav{
+    width: 100%;
+justify-content: center;
+font-size: 0.9rem;
+font-family: 'GeistVFMono';
 
+text-align: center;
+& ul{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+}
+  }
+
+  
   &_logo{
 
     display: flex;
@@ -794,6 +810,8 @@ background-position: -100% center;
 
 @media screen and (max-width: 720px) {
   .footer{
+   min-height: 70vh;
+ 
     &_copy{
       text-align: center;
       flex-direction: column;

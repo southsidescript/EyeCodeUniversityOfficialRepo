@@ -18,6 +18,24 @@ const Footer = () => {
                    
                     </div>
                  </div>
+
+              <nav className={style.footer_nav}>
+                <ul>
+                   <Link href={'#'}>
+                    <li> Результаты недели</li>
+                   </Link>
+                   <Link href={'#'}>
+                    <li>Документы</li>
+                   </Link>
+                   <Link href={'#'}>
+                    <li>eyecode.academy@gmail.com</li>
+                   </Link>
+                   <Link href={'#'}>
+                    <li>+7 928 352 65 84</li>
+                   </Link>
+                 
+                </ul>
+              </nav>
    
 
             </div>
