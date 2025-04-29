@@ -21,16 +21,16 @@ const Footer = () => {
 
               <nav className={style.footer_nav}>
                 <ul>
-                   <Link href={'#'}>
+                   <Link href={'/Stats'}>
                     <li> Результаты недели</li>
                    </Link>
-                   <Link href={'#'}>
+                   <Link href={'/Docs'}>
                     <li>Документы</li>
                    </Link>
-                   <Link href={'#'}>
+                   <Link href={'mailto:eyecode.academy@gmail.com'}>
                     <li>eyecode.academy@gmail.com</li>
                    </Link>
-                   <Link href={'#'}>
+                   <Link href={'https://wa.me/+79283526584'}>
                     <li>+7 928 352 65 84</li>
                    </Link>
                  
