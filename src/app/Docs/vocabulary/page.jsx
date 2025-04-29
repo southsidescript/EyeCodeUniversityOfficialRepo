@@ -21,7 +21,6 @@ const Vocabulary = () => {
            </div>
 
 
-
       </div>
     )
 }
