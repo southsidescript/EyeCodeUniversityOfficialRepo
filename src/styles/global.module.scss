@@ -558,8 +558,8 @@ height: 30px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
- overflow: hidden;
- padding: 0 100px;
+  overflow: hidden;
+  padding: 0 100px;
 
   &_logo{
 
@@ -801,6 +801,7 @@ background-position: -100% center;
       gap: 100px;
     }
     &_logo{
+      transform: translate(0,10%);
       & h1{
         text-align: center;
         width: 100vw;
