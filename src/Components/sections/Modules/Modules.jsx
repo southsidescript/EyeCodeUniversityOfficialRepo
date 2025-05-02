@@ -19,7 +19,7 @@ const Modules = () => {
                    
                     <div className={style.modules_card_price}>6500 ₽</div>
                      <ClassicButton>
-                     <Link href={'https:wa.me/79283526584'}>
+                     <Link href={'https://wa.me/79283526584'}>
                          Подробнее
                      </Link>
                     
@@ -35,7 +35,7 @@ const Modules = () => {
                    
                     <div className={style.modules_card_price}>13000 ₽ <sup><del>15500₽</del></sup></div>
                      <ClassicButton>
-                     <Link href={'https:wa.me/79283526584'}>
+                     <Link href={'https://wa.me/79283526584'}>
                          Подробнее
                      </Link>
                     
