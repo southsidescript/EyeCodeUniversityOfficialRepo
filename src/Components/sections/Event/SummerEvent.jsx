@@ -96,18 +96,18 @@ const EyeCodeBattlePage = () => {
               <div className={styles.card}>
                 <div className={styles.cardHeader}>
                  
-                  <h3 className={styles.cardTitle}>Основные призы</h3>
+                  <h3 className={styles.cardTitle}>  <Trophy className={styles.cardIcon} color="blue" size={16} /> Основные призы</h3>
                 </div>
                 <ul className={styles.list}>
-                  <li>  <Trophy className={styles.cardIcon} color="green" size={14} /> Steam gift cards</li>
-                  <li>  <Trophy className={styles.cardIcon} color="green" size={14} /> Мерч от EyeCode</li>
-                  <li>  <Trophy className={styles.cardIcon} color="green" size={14} /> Коврики для мышки</li>
+                  <li>  Steam gift cards</li>
+                  <li>   Мерч от EyeCode</li>
+                  <li>  И многое другое</li>
                 </ul>
               </div>
 
               <div className={styles.card}>
                 <div className={styles.cardHeader}>
-                  <Gift className={styles.cardIcon} size={16} />
+                  <Gift color="blue" className={styles.cardIcon} size={16} />
                   <h3 className={styles.cardTitle}>Призы за номинации</h3>
                 </div>
                 <ul className={styles.list}>
