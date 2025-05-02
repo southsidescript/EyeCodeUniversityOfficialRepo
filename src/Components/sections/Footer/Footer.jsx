@@ -29,6 +29,7 @@ const Footer = () => {
                    </Link>
                    <Link href={'mailto:eyecode.academy@gmail.com'}>
                     <li>eyecode.academy@gmail.com</li>
+                    <li>serkhan.dev@gmail.com</li>
                    </Link>
                    <Link href={'https://wa.me/+79283526584'}>
                     <li>+7 928 352 65 84</li>

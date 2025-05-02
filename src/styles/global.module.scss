@@ -548,11 +548,12 @@ height: 30px;
    
   &_nav{
     width: 100%;
+    display: flex;
 justify-content: center;
 font-size: 0.9rem;
 font-family: 'GeistVFMono';
 
-text-align: center;
+
 & ul{
   display: flex;
   flex-direction: column;
