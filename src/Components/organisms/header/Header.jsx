@@ -63,7 +63,7 @@ const Header = () => {
                 }}>
                             <li><Link href="#">О нас</Link></li>
                             <li><Link href="/Docs">Документы</Link></li>
-                            <li><Link href="#footer">Контакты</Link></li>
+                            <li><Link href="/Home#footer">Контакты</Link></li>
                             <li><Link href="/Events">События</Link></li>
                             
                 </ul>
