@@ -61,10 +61,10 @@ const Header = () => {
                 <ul onClick={()=>{
                     setActive(false);
                 }}>
-                            <li><Link href="">О нас</Link></li>
+                            <li><Link href="#">О нас</Link></li>
                             <li><Link href="/Docs">Документы</Link></li>
-                            <li><Link href="">Контакты</Link></li>
-                            <li><Link href="">События</Link></li>
+                            <li><Link href="#footer">Контакты</Link></li>
+                            <li><Link href="/Events">События</Link></li>
                             
                 </ul>
                 </nav>

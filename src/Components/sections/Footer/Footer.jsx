@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Footer = () => {
     
     return(
-        <footer className={style.footer}>
+        <footer id='footer' className={style.footer}>
            
             <div>
                  <div className={style.footer_copy}>

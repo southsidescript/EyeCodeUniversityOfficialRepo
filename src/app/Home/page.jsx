@@ -5,7 +5,7 @@ import Link from "next/link";
 import '@/app/global.css'
 import Consult from "@/Components/sections/Consult/Consult";
 import Faq from "@/Components/organisms/FAQ/Faq";
-
+import Modules from "@/Components/sections/Modules/Modules";
 const Home = ()=> {
    
 
@@ -14,7 +14,6 @@ return(<>
     <main className={style.home}>
      
         <div className={style.container}>
-      
             <DesignStation/>
         </div>
 
@@ -25,20 +24,18 @@ return(<>
     EyeCode University — инновационная платформа знаний, где искусственный интеллект, передовые технологии и практический опыт создают IT-лидеров будущего.
     </div>
     
-        <nav className={style.home_nav}>
-          
-
-            <Link href={'https://wa.me/79283526584'}>
-            <button className={style.home_nav_button}>Начать обучение</button>
+        <Link href={'https://wa.me/79283526584'}>
+            <button className={style.home_button}>Начать обучение</button>
             </Link>
    
-
-        </nav>
-
+        
 
 
     </main>
+    
+    <Modules/>
    <Consult/>
+
    {/* <Faq/> */}
    
 
