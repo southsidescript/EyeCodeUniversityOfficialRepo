@@ -228,7 +228,20 @@
     border-radius: var(--border-radius);
     text-decoration: none;
     border: 1px solid rgba(240, 246, 252, 0.1);
-  }
+    position: relative;
+    overflow: hidden;
+   &::after{
+    content:'';
+    position: absolute;
+    height: 110%;
+    width: 15px;
+    background: white;
+    filter: blur(15px);
+    left: 0;
+    animation: slide 5s linear infinite;
+    top: 0;
+   }  
+} 
   
   .button:hover {
     background-color: #2ea043;
@@ -520,3 +533,12 @@
     }
   }
   
+  @keyframes slide{
+    0%{
+      transform: translateX(-20px);
+    }
+  
+    100%{
+      transform: translateX(300px);
+    }
+  }
