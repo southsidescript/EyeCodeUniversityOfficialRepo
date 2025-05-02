@@ -1,7 +1,7 @@
 import styles from "./styles.module.css"
 import { CodeIcon, Calendar, Users, Gift, Trophy, MessageCircle, Star, GitFork } from "lucide-react"
 
-export default function EyeCodeBattlePage() {
+const EyeCodeBattlePage = () => {
   return (
     <div className={styles.container}>
       <header className={styles.header}>
@@ -199,3 +199,6 @@ export default function EyeCodeBattlePage() {
     </div>
   )
 }
+
+
+export default EyeCodeBattlePage;

@@ -1,5 +1,6 @@
 import style from '@/styles/global.module.scss';
 import ClassicButton from '@/Components/molecules/ClassicButton/ClassicButton';
+import Link from 'next/link';
 const Modules = () => {
     return (
         <section className={style.modules}> 
@@ -18,7 +19,10 @@ const Modules = () => {
                    
                     <div className={style.modules_card_price}>6500 ₽</div>
                      <ClassicButton>
-                        Подробнее
+                     <Link href={'https:wa.me/79283526584'}>
+                         Подробнее
+                     </Link>
+                    
                      </ClassicButton>
                 </div>
 
@@ -31,7 +35,10 @@ const Modules = () => {
                    
                     <div className={style.modules_card_price}>13000 ₽ <sup><del>15500₽</del></sup></div>
                      <ClassicButton>
-                        Подробнее
+                     <Link href={'https:wa.me/79283526584'}>
+                         Подробнее
+                     </Link>
+                    
                      </ClassicButton>
                 </div>
              </div>

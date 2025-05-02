@@ -31,8 +31,8 @@ const Header = () => {
                         <ul>
                             <li><Link href="">О нас</Link></li>
                             <li><Link href="/Docs">Документы</Link></li>
-                            <li><Link href="">Контакты</Link></li>
-                            <li><Link href="">События</Link></li>
+                            <li><Link href="/Home#footer">Контакты</Link></li>
+                            <li><Link href="/Events">События</Link></li>
                             
                         </ul>
                    </nav>
