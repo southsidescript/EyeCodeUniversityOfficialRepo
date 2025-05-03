@@ -5,4 +5,9 @@
     color: white;
     border-radius: 25px;
     align-self: center;
+    transition: all .2s ease;
+    &:hover{
+        background: white;
+        color: black;
+    }
 }

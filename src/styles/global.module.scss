@@ -416,7 +416,7 @@ height: 30px;
     & ul{
        height: 100%;   
        width: 100%;
-       gap: 50px; 
+       gap: 30px; 
        font-size: 0.8rem;
        display: flex;
        justify-content:space-between;
@@ -652,11 +652,11 @@ font-family: 'GeistVFMono';
     animation: table 3s 1;
   }
   &_card{
-    width: 280px;
-    height: 280px;
+    width: 300px;
+    height: 300px;
     display: flex;
-    border-radius: 30px;
-    padding: 10px;
+    border-radius: 40px;
+    padding: 15px;
     border-top: 2px solid rgb(36, 36, 36);
     flex-direction: column;
     background: linear-gradient(120deg,rgb(34, 34, 34),black) ;
@@ -665,23 +665,25 @@ font-family: 'GeistVFMono';
     font-family: "GeistVF";
     filter: brightness(1.2);
     position: relative;
-
-    &:after{
-      content: 'Hot 🔥';
-      position: absolute;
-      width: 50px;
-      text-align: center;
-      align-content: center;
-      border-radius: 15px;
-      right: 10%;
-      top:10px;
-      height: 20px;
-      font-family: Arial;
-      font-size: 0.8rem;
-      border: 1px solid greenyellow;
-    background: greenyellow;
-
+    transition: all .2s ease;
+    cursor: pointer;
+    &:hover{
+      transform: translateY(-10px);
     }
+   &_mark{
+    position: absolute;
+    width: 100px;
+ 
+    text-align: center;
+    align-content: center;
+    border-radius: 15px;
+    right: 10%;
+    top:10px;
+    height: 20px;
+    font-family: Arial;
+    font-size: 0.8rem;
+   } 
+  
     &_price{
       font-size: 1.5rem;
       color: white;

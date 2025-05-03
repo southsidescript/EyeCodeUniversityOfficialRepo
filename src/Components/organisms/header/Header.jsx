@@ -29,7 +29,7 @@ const Header = () => {
                 <div className={style.header_info}>
                    <nav className={style.header_nav}>
                         <ul>
-                            <li><Link href="">О нас</Link></li>
+                            {/* <li><Link href="">О нас</Link></li> */}
                             <li><Link href="/Docs">Документы</Link></li>
                             <li><Link href="/Home#footer">Контакты</Link></li>
                             <li><Link href="/Events">События</Link></li>
@@ -61,7 +61,7 @@ const Header = () => {
                 <ul onClick={()=>{
                     setActive(false);
                 }}>
-                            <li><Link href="#">О нас</Link></li>
+                            {/* <li><Link href="#">О нас</Link></li> */}
                             <li><Link href="/Docs">Документы</Link></li>
                             <li><Link href="/Home#footer">Контакты</Link></li>
                             <li><Link href="/Events">События</Link></li>

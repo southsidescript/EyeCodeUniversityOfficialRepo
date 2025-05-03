@@ -12,6 +12,7 @@ const Modules = () => {
              <div className={style.modules_cards}>
                 <div className={style.modules_card}>
                     <div>
+                    <div className={`${style.modules_card_mark} acces`}>Набор открыт</div>  
                     <h2>Classic module</h2>
                     <p>Групповое обучение</p>
                      <p>Длительность обучения: 296 часов</p>
@@ -28,6 +29,7 @@ const Modules = () => {
 
                 <div className={style.modules_card}>
                     <div>
+                     <div className={`${style.modules_card_mark} denied`}>Приостановлен</div>  
                     <h2>Pro module</h2>
                     <p>Индивидуальное обучение</p>
                      <p>Длительность обучения: 256 часов</p>
