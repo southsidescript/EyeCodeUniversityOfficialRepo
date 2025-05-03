@@ -11,9 +11,9 @@ const Footer = () => {
                     <p>©2025 EyeCode University.Все права защищены.</p>
                     <div className={style.footer_copy_social}>
                         <ul>
-                            <Link href='#'><li><Image src={'/github-mark-white.png'} width={30} height={30} alt='github'></Image>  </li></Link>
-                            <Link href='#'><li><Image src={'/wa.png'} width={30} height={30} alt='github'></Image>  </li></Link>
-                            <Link href='#'><li><Image src={'/github-mark-white.png'} width={30} height={30} alt='github'></Image>  </li></Link>
+                            <Link href='https://github.com/southsidescript'><li><Image src={'/github-mark-white.png'} width={30} height={30} alt='github'></Image>  </li></Link>
+                            <Link href='https://wa.me/79283526584'><li><Image src={'/wa.png'} width={30} height={30} alt='github'></Image>  </li></Link>
+                            <Link href='https://t.me/eyecodematerial'><li><Image src={'/tmex48.png'} width={30} height={30} alt='github'></Image>  </li></Link>
                         </ul>
                    
                     </div>
