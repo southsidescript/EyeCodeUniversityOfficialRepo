@@ -301,42 +301,47 @@ height: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
+  gap: 50px;
   position: relative;
   &_heading{
-    height: 100px;
+    animation: scaleTo 1s 1;
+  
     z-index: 1;
     letter-spacing: 1px;
-    font-size: 5rem;
+    font-size: 7rem;
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-   text-align: center;
+    text-align: center;
+    
     & sup{
       width: 200px;
-      font-size: 2rem;
+      font-size: 2.5rem;
       color: transparent;
+      font-family: 'Arial';
       background-clip: text;
       z-index: 4;
-      background-image: linear-gradient(120deg,white,black 0,10%,white);
-
+      background-image: linear-gradient(120deg,white,black 0,1%,white);
+     
     }
   }
   
   &_title{
     width: 70%;
-    font-size: 1.1rem;
-
+    font-size: 0.9rem;
+    
+    
     z-index: 1;
     text-align: center;
     font-family: 'GeistVF';
-    color: rgb(255, 255, 255);
+    color: rgb(201, 201, 201);
     
   }
 
   &_button{
     background: linear-gradient(120deg,orange 0,20% ,blue);
-
+     font-size: 0.7rem;
     width: 150px;
      border: none;
     outline: none;
@@ -621,84 +626,87 @@ font-family: 'GeistVFMono';
 
 }
 
-.modules{
-  display: flex;
-  flex-direction: column;
-   min-height: 100vh;
-  &_title{
-    & h1{
-      align-self: flex-start;
-     
-      font-size: 2.5rem;
-    }
-
-     & p{
-      color: gray;
-      font-family: 'GeistVFMono';
-      
-     }
-
-  } 
-
-  &_cards{
+.about{
+  height: 80vh;
+  display: flex; 
+  justify-content: space-between;
+  &_items{
+    width: 40%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: space-evenly;
-    align-items: center;
-    padding: 50px 0;
-    width: 100%;
-    height: calc(100vh - 200px);
-    animation: table 3s 1;
-  }
-  &_card{
-    width: 300px;
-    height: 300px;
-    display: flex;
-    border-radius: 40px;
-    padding: 15px;
-    border-top: 2px solid rgb(36, 36, 36);
     flex-direction: column;
-    background: linear-gradient(120deg,rgb(34, 34, 34),black) ;
-    gap: 10px;
-    justify-content: space-around;
-    font-family: "GeistVF";
-    filter: brightness(1.2);
-    position: relative;
-    transition: all .2s ease;
-    cursor: pointer;
-    &:hover{
-      transform: translateY(-10px);
-    }
-   &_mark{
-    position: absolute;
-    width: 100px;
- 
-    text-align: center;
-    align-content: center;
-    border-radius: 15px;
-    right: 10%;
-    top:10px;
-    height: 20px;
-    font-family: Arial;
-    font-size: 0.8rem;
-   } 
-  
-    &_price{
-      font-size: 1.5rem;
-      color: white;
-      text-align: center;
-    }
-    & h2{}
-    & p{
-      color: gray;
-      font-size: 0.8rem;
-    }
+    height: 100%;
+    border-left: 1px dashed rgb(44, 44, 44);
+ &_item{
+  width: 100%;
+  display: flex;
+  text-align: center;
+  align-content: center;
+  font-family: 'Geist';
+  height: 25%;
+  border-bottom: 1px dashed rgb(44, 44, 44);
 
+  &_design{
+    width: calc(100% / 3);
+    height: 100%;
+    border-right: 1px dashed rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &_title{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 70%;
+     text-align: start;
 
- }
-
+  }
+ }  
 }
+  &_heading{
+    padding: 20px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-family: 'Geist';
+    width: 50%;
+    height: 100%;
+    & p{
+      font-size: 1rem;
+      color: gray;
+    }
+  }
+  &_wrapper{
+ 
+  border-top: 1px dashed rgb(44, 44, 44);
+  border-right: 1px dashed rgb(44, 44, 44);
+  }
+}
+
+@keyframes scaleTo{
+  0%{
+    transform: scale(1.2) translateY(-50px);
+    opacity: 0; 
+  }
+  30%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: scale(1) translateY(0px);
+  }
+}
+@keyframes slideToUp{
+  0%{
+
+    opacity: 0; 
+  }
+ 
+  100%{
+    opacity: 1;
+
+  }
+}
+
 
 @keyframes morph {
   0% {
@@ -824,6 +832,41 @@ background-position: -100% center;
 }
 
 
+@media screen and (max-width:1200px){
+  .about{
+
+  &_items{
+ 
+       &_item{
+       &_title{
+       font-size: 0.7rem;
+
+      }
+ }  
+}
+ 
+}
+  
+}
+
+
+@media screen and (max-width:1200px){
+  .about{
+
+  &_items{
+ 
+       &_item{
+       &_title{
+       font-size: 0.7rem;
+
+      }
+ }  
+}
+ 
+}
+  
+}
+
 
 @media screen and (max-width: 975px){
   .footer{
@@ -870,6 +913,39 @@ background-position: -100% center;
     width: 100%;
   }
 
+  .about{
+   
+    flex-direction: column;
+
+  &_items{
+     width: 100vw;
+    &_item{
+    
+
+          &_design{
+          
+          }
+          &_title{
+           padding: 20px;
+
+          }
+    }  
+}
+  &_heading{
+    width: 100vw;
+    border-bottom: 1px dashed rgb(44, 44, 44);
+   
+    & p{
+    
+    }
+  }
+  &_wrapper{
+
+  }
+}
+
+
+  
   
 }
 
@@ -924,6 +1000,9 @@ background-position: -100% center;
   .home{
     &_heading{
       font-size: 4rem;
+      & sup{
+        font-size: 1.8rem;
+      }
     }
     &_title{
       width: 100%;
@@ -954,7 +1033,34 @@ background-position: -100% center;
 }
 
 @media screen and (max-width: 500px){
-   
+ 
+    .about{
+
+  &_items{
+    
+    &_item{
+    
+
+          &_design{
+          
+          }
+          &_title{
+           padding: 20px;
+
+          }
+    }  
+}
+  &_heading{
+    width: 90vw;
+    
+    & p{
+    
+    }
+  }
+  &_wrapper{
+
+  }
+}
 
 
 .header{
@@ -1034,6 +1140,28 @@ background-position: -100% center;
     width: 100vw;
     left: calc(50% - 50vw);
   }
+
+  .consult{
+   margin-top: 100px;
+  & h2{
+    width: 90vw;
+   font-size: 2rem;
+
+  }
+  &_title{
+  width: 90vw;
+  }
+
+  &_btn{
+
+  }
+
+  &_action{
+ 
+  
+  }
+}
+
 }
 
 

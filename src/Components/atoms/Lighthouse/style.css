@@ -1,0 +1,52 @@
+.lighthouse{
+    width: 50px;
+    height: 50px;
+    animation: morph 5s infinite linear;
+    background: linear-gradient(150deg, white 0,1%,cyan,orangered);
+}
+
+
+@keyframes morph {
+  0% {
+    border-radius: 40% 60% 70% 30% / 30% 70% 60% 40%;
+    transform: translate(0, 0) scale(1);
+  }
+
+  15%{
+    border-radius: 30% 70% 40% 60% / 60% 40% 70% 30%;
+    transform: translate(10px, -25px) scale(1.1);
+  }
+  25% {
+    border-radius: 60% 40% 50% 50% / 50% 60% 40% 60%;
+    transform: translate(-25px, 10px) scale(1.1);
+  }
+  35%{
+    border-radius: 30% 70% 50% 50% / 60% 50% 50% 40%;
+    transform: translate(-25px, -10px) scale(1.1);
+  }
+  45% {
+    border-radius: 50% 50% 70% 30% / 60% 40% 30% 70%;
+    transform: translate(10px, 25px) scale(1.1);
+  }
+  55% {
+    border-radius: 50% 50% 60% 40% / 60% 50% 40% 50%;
+    transform: translate(25px, -15px) scale(1.2);
+  }
+  65% {
+    border-radius: 60% 40% 70% 30% / 40% 60% 30% 70%;
+    transform: translate(-25px, 15px) scale(1.1);
+  }
+  75% {
+    border-radius: 70% 30% 40% 60% / 40% 60% 30% 70%;
+    transform: translate(-10px, -25px) scale(1.1);
+  }
+  85%{
+    border-radius: 40% 60% 50% 50% / 60% 40% 50% 50%;
+    transform: translate(10px, 10px) scale(1.1);
+  }
+
+  100% {
+    border-radius: 40% 60% 70% 30% / 30% 70% 60% 40%;
+    transform: translate(0, 0) scale(1);
+  }
+}

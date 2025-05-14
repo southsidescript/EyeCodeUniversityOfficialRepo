@@ -5,7 +5,7 @@ import Link from "next/link";
 import '@/app/global.css'
 import Consult from "@/Components/sections/Consult/Consult";
 import Faq from "@/Components/organisms/FAQ/Faq";
-import Modules from "@/Components/sections/Modules/Modules";
+
 const Home = ()=> {
    
 
@@ -33,8 +33,8 @@ return(<>
 
     </main>
     
-    { /*<Modules/>*/}
-   {/*<Consult/> */}
+ 
+  
 
    {/* <Faq/> */}
    
