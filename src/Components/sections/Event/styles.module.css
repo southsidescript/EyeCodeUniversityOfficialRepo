@@ -193,6 +193,7 @@
   .heroSubtitle {
     font-size: 16px;
     margin: 0 0 24px 0;
+    color: red;
   }
   
   /* Event details */
@@ -221,7 +222,8 @@
   .button {
     display: inline-block;
     padding: 8px 16px;
-    background-color: var(--github-success);
+    
+    background-color: var(--github-button-hover);
     color: white;
     font-size: 14px;
     font-weight: 500;
@@ -243,9 +245,9 @@
    }  
 } 
   
-  .button:hover {
+  /* .button:hover {
     background-color: #2ea043;
-  }
+  } */
   
   /* Text */
   .text {
