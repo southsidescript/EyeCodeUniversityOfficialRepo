@@ -645,6 +645,7 @@ font-family: 'GeistVFMono';
   height: 25%;
   border-bottom: 1px dashed rgb(44, 44, 44);
 
+
   &_design{
     width: calc(100% / 3);
     height: 100%;
@@ -652,6 +653,7 @@ font-family: 'GeistVFMono';
     display: flex;
     align-items: center;
     justify-content: center;
+      overflow: hidden;
   }
   &_title{
      display: flex;
