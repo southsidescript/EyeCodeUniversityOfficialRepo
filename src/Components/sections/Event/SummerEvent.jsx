@@ -43,7 +43,7 @@ const EyeCodeBattlePage = () => {
           <section className={styles.section}>
             <div className={styles.hero}>
               <h1 className={styles.heroTitle}>EyeCode Battle: Summer Edition</h1>
-              <p className={styles.heroSubtitle}>Регистрация закрыта!!</p>
+              <p className={styles.heroSubtitle}>Регистрация закрыта!</p>
 
               <div className={styles.eventDetails}>
                 <div className={styles.eventDetail}>
