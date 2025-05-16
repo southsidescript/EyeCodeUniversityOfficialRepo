@@ -70,7 +70,16 @@ export const event_teams = [
     score:0,
     dev:'Мухаммед Намазов',
     pos:9
+ }, 
+ {
+    name:'Eyecode team 4',
+    leader:'Имран',
+    qa:'Отсутствует',
+    score:0,
+    dev:'Георгий',
+    pos:10
  }
+ 
  
  
  
