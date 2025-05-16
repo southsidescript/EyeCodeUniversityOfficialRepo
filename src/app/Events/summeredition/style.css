@@ -100,6 +100,8 @@
 
 
   div{
+      text-align: center;
+        align-content: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -114,6 +116,8 @@
     font-family: 'GeistVF';
     width: max-content;
     & div{
+            text-align: center;
+             align-content: center;
           display: flex;
           align-items: center;
           justify-content: center;
