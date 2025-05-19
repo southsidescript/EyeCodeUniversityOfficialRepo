@@ -1,5 +1,4 @@
 'use client'
-import { useState }    from "react";
 import Container       from "@/Components/organisms/Containers/container/Container";
 import { event_teams } from "@/data/summer";
 import { Trophy }      from "lucide-react";
