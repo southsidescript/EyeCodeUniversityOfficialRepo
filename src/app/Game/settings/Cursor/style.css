@@ -1,0 +1,26 @@
+.cursorx{
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    border-top: 1px dashed rgb(39, 39, 39);
+    top: 50%;
+    pointer-events: none;
+    
+}
+
+.cursory{
+    position: absolute;
+    width: 1px;
+    height: 100vh;
+    border-right: 1px dashed rgb(39, 39, 39);
+    left: 50%;
+    pointer-events: none;
+}
+
+
+
+@media screen and (max-width:500px){
+    .cursorx,.cursory{
+        display: none;
+    }
+}

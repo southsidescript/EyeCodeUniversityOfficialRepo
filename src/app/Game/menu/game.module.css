@@ -1,0 +1,64 @@
+.canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+
+  
+.controls{
+  position: fixed;
+  bottom: 10%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  left: calc(50% - 100px);
+  gap: 20px;
+
+  & input{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    background: none;
+    outline: none;
+    border: 1px solid rgba(255, 255, 255, 0.404);
+    color: white;
+    animation: fade 1.5s infinite linear;
+    font-family: monospace;
+    
+  }
+}
+
+
+
+
+  .button{
+    width: 200px;
+    height: 50px;
+    text-align: center;
+    align-content: center;
+    background: none;
+    border: 1px dotted white;
+    color: white;
+    font-family: monospace;
+    &:hover{
+      background: white;
+      color: black;
+      cursor: pointer;
+    }
+  }
+
+
+  @keyframes fade{
+    0%{
+      opacity: 0.5;
+    }
+    50%{
+      opacity: 1;
+    }
+    100%{
+      opacity: 0.5;
+    }
+  }

@@ -1,0 +1,146 @@
+.couponWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  animation: slideUp 2s 1;
+  overflow: hidden;
+
+}
+
+.couponCard {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(8px);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #1a1a1a;
+}
+
+.shineEffect {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to bottom right, rgba(100, 100, 100, 0.2), transparent);
+  pointer-events: none;
+}
+
+.content {
+  padding: 24px;
+  position: relative;
+  z-index: 10;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.discount {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: white;
+  margin: 0;
+}
+
+.maxAmount {
+  font-size: 0.75rem;
+  color: #a0a0a0;
+  margin: 4px 0 0 0;
+}
+
+.description {
+  font-size: 0.875rem;
+  color: white;
+  margin: 8px 0 0 0;
+}
+
+.codeContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.code {
+  color: #00ff4c;
+  font-weight: 700;
+  font-size: 1.25rem;
+  letter-spacing: 0.05em;
+}
+
+.copyText {
+  margin-top: 4px;
+  font-size: 0.75rem;
+  color: #a0a0a0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.copyIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.footer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expiry {
+  font-size: 0.75rem;
+  color: #a0a0a0;
+}
+
+.useButton {
+  background-color: rgba(0, 255, 76, 0.9);
+  color: black;
+  font-size: 0.75rem;
+  padding: 6px 12px;
+  height: 28px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.useButton:hover {
+  background-color: rgb(0, 255, 76);
+}
+
+.topRightGlow {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(to bottom right, rgba(0, 255, 76, 0.3), transparent);
+  border-bottom-left-radius: 100%;
+  opacity: 0.5;
+}
+
+.bottomLeftGlow {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(to top right, rgba(0, 255, 76, 0.2), transparent);
+  border-top-right-radius: 100%;
+  opacity: 0.3;
+}
+
+
+@keyframes slideUp{
+  0%{
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100%{
+    transform: translateY(0);
+      opacity: 1;
+  }
+  
+}
