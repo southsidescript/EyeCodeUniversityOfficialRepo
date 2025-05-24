@@ -58,7 +58,7 @@ useEffect(() => {
                         <div className='result-display-table-header'>  <div>Время:{Math.floor(time/60)} m {time%60} s</div> <div>Статистика</div>  <div>{date}</div>     </div>
                         
                         <div className='result-display-table-correct'> <div></div> <div className='result-display-table-score'>{score}+</div> <div>Правильно<CheckCheck size={16} color='#00ff9d'/> </div> </div>
-                        <div className='result-display-table-incorrect'><div></div> <div className='result-display-table-score'>{20 - score}-</div> <div>Неправильно <ShieldX size={16} color='#ff0066'/></div> </div>
+                        <div className='result-display-table-incorrect'><div></div> <div className='result-display-table-score'>{30 - score}-</div> <div>Неправильно <ShieldX size={16} color='#ff0066'/></div> </div>
                       </div>
                        
                     </div>    
