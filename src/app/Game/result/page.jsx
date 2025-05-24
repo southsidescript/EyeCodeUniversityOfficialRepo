@@ -44,7 +44,7 @@ useEffect(() => {
                   <div className="result-card-header">
                                        <div className="result-card-header-title">
                                           <div>Game results</div> 
-                                          <div className='result-card-header-percent'>    <Counter point={score * 100 / 20} /> <Percent size={16} color='cyan' />  </div>    
+                                          <div className='result-card-header-percent'>    <Counter point={score * 100 / 30} /> <Percent size={16} color='cyan' />  </div>    
                                        </div>
 
                                          <div className="play-card-header-title"><GitHubStarButton/></div>  
